@@ -12,10 +12,12 @@
     />
     <link href="/assets/css/output.css" rel="stylesheet" />
   </head>
-  <body class="font-poppins">
+  <body
+    class="font-poppins space-y-16 lg:space-y-20 xl:space-y-24 text-gray-900"
+  >
     <!-- Hero Section -->
-    <section class="hero font-jakarta">
-      <header class="w-full  font-jakarta">
+    <section class="hero font-jakarta bg-[#FAFAFA]">
+      <header class="w-full font-jakarta">
         <nav class="container mx-auto py-4 md:px-0 px-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-x-24">
@@ -104,7 +106,7 @@
         </nav>
       </header>
 
-      <div class="mx-auto mt-10 lg:mt-16 xl:mt-20  relative">
+      <div class="mx-auto mt-10 lg:mt-16 xl:mt-20 relative">
         <div class="container mx-auto">
           <h1
             class="text-center md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:w-4/5 w-full"
@@ -112,7 +114,7 @@
             Manage your e-commerce business operations with Karbari
           </h1>
           <p
-            class="text-base lg:text-lg text-center md:text-left md:w-1/2 xl:w-1/3 mt-10 xl:mt-20 text-gray-600"
+            class="text-base lg:text-lg text-center md:text-left md:w-1/2 xl:w-1/3 mt-10 xl:mt-20 text-gray-600 px-4 md:px-0"
           >
             All-in-one e-commerce business automation tool integrating courier
             services for seamless operations.
@@ -120,14 +122,14 @@
         </div>
         <div class="container mx-auto text-center md:text-left">
           <button
-            class="font-bold text-white bg-green lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px]"
+            class="font-bold text-white bg-green lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
           >
             Try Karbari web app
           </button>
         </div>
 
         <div
-          class="container mx-auto mt-16 space-y-4  flex flex-col justify-center items-center md:items-start"
+          class="container mx-auto mt-16 space-y-4 flex flex-col justify-center items-center md:items-start"
         >
           <img
             src="./assets/images/stars-yellow.svg"
@@ -138,7 +140,7 @@
             Best Business Automation App in market!
           </h3>
           <p
-            class="text-gray-700 text-[14px] lg:text-[16px] w-full  text-center md:text-left md:w-1/2 lg:w-1/4"
+            class="text-gray-700 text-[14px] lg:text-[16px] w-full text-center md:text-left md:w-1/2 lg:w-1/4 px-4 md:px-0"
           >
             Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
             arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper
@@ -160,21 +162,19 @@
         <img
           src="./assets/images/hero-lines.svg"
           alt="lines"
-          class="absolute bottom-0 right-0"
+          class="absolute bottom-0 right-0 pointer-events-none"
         />
 
         <img
           src="./assets/images/hero-code2.svg"
           alt="code"
-          class="absolute bottom-28 right-10 md:block hidden lg:right-28 xl:bottom-14 xl:right-64 w-[400px] lg:w-[450px] xl:w-[500px]"
+          class="absolute bottom-28 right-10 md:block hidden lg:right-28 xl:bottom-14 xl:right-64 w-[400px] lg:w-[450px] xl:w-[500px] pointer-events-none"
         />
       </div>
     </section>
 
     <!-- Feature List Section -->
-    <section
-      class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24"
-    >
+    <section class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24">
       <p
         class="text-center text-[14px] md:text-[16px] font-semibold text-green"
       >
@@ -183,130 +183,530 @@
       <h2
         class="text-center text-[24px] md:text-[32px] lg:text-[52px] font-bold mt-5 md:mt-8"
       >
-        Karbari app’s features give you the ultimate flexibility
+        Karbari app's features give you the ultimate flexibility
       </h2>
 
-      <div class="space-y-8 md:space-y-12 mt-10">
-        <div class="space-y-2">
-          <div class="flex items-center justify-center gap-x-4 ">
-            <img
-              src="./assets/images/tick.svg"
-              alt="tick mark"
-              class="w-6 h-6"
-            />
-            <h3 class="text-[16px] md:text-[18px] font-semibold">
-              Courier Integration
-            </h3>
+      <div class="mt-10 grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+        <div class="space-y-8 h-full text-[#444444]">
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-center md:justify-start gap-x-4"
+            >
+              <img
+                src="./assets/images/tick.svg"
+                alt="tick mark"
+                class="w-6 h-6"
+              />
+              <h3 class="text-[16px] lg:text-[18px] font-semibold">
+                Courier Integration
+              </h3>
+            </div>
+            <ul
+              class="text-center md:text-left md:ml-2 md:list-disc md:list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>Integrates seamlessly with various courier services.</li>
+              <li>
+                Automatically updates courier notes, prices, and final charges.
+              </li>
+            </ul>
           </div>
-          <ul
-            class=" text-center md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Integrates seamlessly with various courier services.</li>
-            <li>
-              Automatically updates courier notes, prices, and final charges.
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <div class="flex items-center justify-center gap-x-4 ">
-            <img
-              src="./assets/images/tick.svg"
-              alt="tick mark"
-              class="w-6 h-6"
-            />
-            <h3 class="text-[16px] md:text-[18px] font-semibold">
-              Real-Time Order Tracking
-            </h3>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-center md:justify-start gap-x-4"
+            >
+              <img
+                src="./assets/images/tick.svg"
+                alt="tick mark"
+                class="w-6 h-6"
+              />
+              <h3 class="text-[16px] lg:text-[18px] font-semibold">
+                Real-Time Order Tracking
+              </h3>
+            </div>
+            <ul
+              class="text-center md:text-left md:ml-2 md:list-disc md:list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>
+                Provides live updates on order status for both merchants and
+                customers.
+              </li>
+              <li>
+                Enhances customer trust with transparent delivery processes.
+              </li>
+            </ul>
           </div>
-          <ul
-            class=" text-center md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Provides live updates on order status for both merchants and customers.</li>
-            <li>
-              Enhances customer trust with transparent delivery processes.
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <div class="flex items-center justify-center gap-x-4 ">
-            <img
-              src="./assets/images/tick.svg"
-              alt="tick mark"
-              class="w-6 h-6"
-            />
-            <h3 class="text-[16px] md:text-[18px] font-semibold">
-              Automated Inventory Management
-            </h3>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-center md:justify-start gap-x-4"
+            >
+              <img
+                src="./assets/images/tick.svg"
+                alt="tick mark"
+                class="w-6 h-6"
+              />
+              <h3 class="text-[16px] lg:text-[18px] font-semibold">
+                Automated Inventory Management
+              </h3>
+            </div>
+            <ul
+              class="text-center md:text-left md:ml-2 md:list-disc md:list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>Monitors and updates inventory levels automatically.</li>
+              <li>Sends alerts for low stock to prevent product shortages.</li>
+            </ul>
           </div>
-          <ul
-            class=" text-center md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Monitors and updates inventory levels automatically.</li>
-            <li>
-              Sends alerts for low stock to prevent product shortages.
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <div class="flex items-center justify-center gap-x-4 ">
-            <img
-              src="./assets/images/tick.svg"
-              alt="tick mark"
-              class="w-6 h-6"
-            />
-            <h3 class="text-[16px] md:text-[18px] font-semibold">
-             WordPress Plugin Integration
-            </h3>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-center md:justify-start gap-x-4"
+            >
+              <img
+                src="./assets/images/tick.svg"
+                alt="tick mark"
+                class="w-6 h-6"
+              />
+              <h3 class="text-[16px] lg:text-[18px] font-semibold">
+                WordPress Plugin Integration
+              </h3>
+            </div>
+            <ul
+              class="text-center md:text-left md:ml-2 md:list-disc md:list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>
+                Features a WordPress plugin to sync orders from WooCommerce
+                sites directly into the app.
+              </li>
+              <li>
+                Automates the update of order data whenever an order is placed
+                on the website.
+              </li>
+            </ul>
           </div>
-          <ul
-            class=" text-center md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Features a WordPress plugin to sync orders from WooCommerce sites directly into the app.</li>
-            <li>
-              Automates the update of order data whenever an order is placed on the website.
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-2">
-          <div class="flex items-center justify-center gap-x-4 ">
-            <img
-              src="./assets/images/tick.svg"
-              alt="tick mark"
-              class="w-6 h-6"
-            />
-            <h3 class="text-[16px] md:text-[18px] font-semibold">
-              Multi-User Environment
-            </h3>
+          <div class="space-y-2">
+            <div
+              class="flex items-center justify-center md:justify-start gap-x-4"
+            >
+              <img
+                src="./assets/images/tick.svg"
+                alt="tick mark"
+                class="w-6 h-6"
+              />
+              <h3 class="text-[16px] lg:text-[18px] font-semibold">
+                Multi-User Environment
+              </h3>
+            </div>
+            <ul
+              class="text-center md:text-left md:ml-2 md:list-disc md:list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>
+                Allows multiple users with different access permissions to
+                enhance collaboration.
+              </li>
+              <li>Supports role-based access to system features and data.</li>
+            </ul>
           </div>
-          <ul
-            class=" text-center md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Allows multiple users with different access permissions to enhance collaboration.</li>
-            <li>
-              Supports role-based access to system features and data.
-            </li>
-          </ul>
         </div>
 
-        <div class="bg-gray-400 rounded-lg p-6 space-y-6">
-          <img src="./assets/images/edit.svg" alt="edit" class="w-16">
-          <h3 class="text-[16px] md:text-[18px] font-semibold">
-              Multi-User Environment
-          </h3>
-          <ul
-            class="md:list-disc md:list-inside text-[14px] md:text-[16px] space-y-2"
-          >
-            <li>Allows multiple users with different access permissions to enhance collaboration.</li>
-            <li>
-              Supports role-based access to system features and data.
-            </li>
-          </ul>
-        </div>
+        <div class="grid gap-8 md:gap-12 content-between h-full">
+          <div class="bg-gray-400 rounded-lg p-6 pt-8 md:pb-16 pb-10 space-y-6">
+            <img src="./assets/images/edit.svg" alt="edit" class="w-16" />
+            <h3 class="text-[16px] lg:text-[18px] font-semibold">
+              Out of the box Customization Capabilities
+            </h3>
+            <ul
+              class="list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>
+                Offers extensive customization to suit specific business
+                workflows and needs.
+              </li>
+              <li>
+                Adaptable to different e-commerce and f-commerce business
+                models.
+              </li>
+            </ul>
+          </div>
 
-        7
+          <div class="bg-gray-400 rounded-lg p-6 pt-8 md:pb-16 pb-10 space-y-6">
+            <img src="./assets/images/fraud.svg" alt="fraud" class="w-16" />
+            <h3 class="text-[16px] lg:text-[18px] font-semibold">
+              Advanced Fraud Detection
+            </h3>
+            <ul
+              class="list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
+            >
+              <li>
+                Utilizes advanced algorithms to identify and prevent fraudulent
+                orders.
+              </li>
+              <li>
+                Protects against financial losses and preserves business
+                integrity.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Extra Flavour Section -->
+    <section
+      class="extraFlavour container mx-auto p-4 space-y-16 lg:space-y-20 xl:space-y-24"
+    >
+      <div
+        class="space-y-8 md:space-y-0 md:grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16"
+      >
+        <div class="space-y-8 md:space-y-12 text-center md:text-start">
+          <div class="space-y-2">
+            <h2 class="font-semibold text-[20px] md:text-[24px] lg:text-[42px]">
+              Cloud-Based Application
+            </h2>
+            <p class="text-[14px] lg:text-[18px]">
+              Embrace simplicity with Karbari’s cloud-based solution. No
+              installation required—access your business tools from anywhere,
+              anytime. Our platform eliminates the need for complex setups,
+              letting you focus on what matters most: growing your business.
+            </p>
+          </div>
+          <div class="space-y-2">
+            <h2 class="font-semibold text-[20px] md:text-[24px] lg:text-[42px]">
+              Super Fast Browsing Experience
+            </h2>
+            <p class="text-[14px] lg:text-[18px]">
+              Speed is essential, and Karbari delivers it in spades. Our
+              application is hosted at edge locations nearest to you, ensuring
+              lightning-fast access and responsiveness. Thanks to dedicated
+              resource allocations, each user enjoys an isolated and optimized
+              environment, making your experience smooth and efficient.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img
+            src="./assets/images/person-with-laptop.svg"
+            alt="Person with laptop"
+          />
+        </div>
+      </div>
+      <div class="space-y-12">
+        <div class="space-y-3 text-center">
+          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
+            Daily Data Backup
+          </h2>
+          <p class="text-[16px] md:text-[20px] lg:text-[26px] font-semibold">
+            Secure, Reliable, and Hassle-Free
+          </p>
+        </div>
+        <div class="space-y-8 md:space-y-12">
+          <div
+            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
+          >
+            <img
+              src="./assets/images/rectangle.svg"
+              alt="rectangle"
+              class="w-20 md:w-auto mb-4 md:mb-0"
+            />
+            <div class="space-y-2">
+              <h3 class="font-semibold text-[16px]">Backups Stored Off-Site</h3>
+              <p class="text-[14px]">
+                Ensuring your data's safety goes beyond regular backups; it's
+                about where these backups are stored. At Karbari, we store all
+                backups off-site, away from our data centers. This strategy
+                protects your valuable data against local disasters, ensuring
+                that even in the worst scenarios, your business can recover
+                swiftly and completely.
+              </p>
+            </div>
+          </div>
+          <div
+            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
+          >
+            <img
+              src="./assets/images/rectangle.svg"
+              alt="rectangle"
+              class="w-20 md:w-auto mb-4 md:mb-0"
+            />
+            <div class="space-y-2">
+              <h3 class="font-semibold text-[16px]">
+                Daily and Fully Automatic
+              </h3>
+              <p class="text-[14px]">
+                Forget manual backups and the risks of human error. Our system
+                performs automatic backups every day, at no extra cost to you.
+                This process is fully automated, providing you with peace of
+                mind and the assurance that your latest business data is always
+                safe and retrievable.
+              </p>
+            </div>
+          </div>
+          <div
+            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
+          >
+            <img
+              src="./assets/images/rectangle.svg"
+              alt="rectangle"
+              class="w-20 md:w-auto mb-4 md:mb-0"
+            />
+            <div class="space-y-2">
+              <h3 class="font-semibold text-[16px]">Hourly Backup Options</h3>
+              <p class="text-[14px]">
+                For businesses that require more frequent data protection,
+                Karbari offers hourly backups. This service ensures that even
+                the most recent transactions are safeguarded, minimizing data
+                loss and providing continuous protection for your critical
+                operations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Courier Section -->
+    <section
+      class="courier container mx-auto p-4 space-y-12 lg:space-y-16 xl:space-y-20"
+    >
+      <h2
+        class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
+      >
+        Seamless Courier Integration
+      </h2>
+
+      <div class="md:grid md:grid-cols-2 md:gap-x-12">
+        <div class="space-y-8 md:flex md:flex-col md:justify-between">
+          <div class="grid grid-cols-2 gap-x-4">
+            <img src="./assets/images/pathao.svg" alt="pathao" />
+            <img src="./assets/images/steadfast.svg" alt="steadfast" />
+          </div>
+          <div class="space-y-4 text-center md:text-left">
+            <h3 class="font-semibold text-[16px]">
+              Integrated Directly into Karbari
+            </h3>
+            <p class="text-[14px]">
+              Both Pathao and Steadfast are fully integrated into the Karbari
+              app, providing a seamless and streamlined logistics experience.
+              Manage shipments, track deliveries in real-time, and access
+              detailed reports all from one platform. Our courier integrations
+              are designed to simplify your operations, reduce overhead, and
+              improve overall customer satisfaction.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="./assets/images/delivery.svg" alt="delivery" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section
+      class="pricing container mx-auto p-4 space-y-12 lg:space-y-16 xl:space-y-20"
+    >
+      <div>
+        <h2
+          class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
+        >
+          Choose the Plan
+        </h2>
+        <h2
+          class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
+        >
+          That Best Fits Your Business
+        </h2>
+      </div>
+      <div class="border">
+        <div class="flex gap-x-4 items-center border justify-center p-4">
+          <p>Pay Monthly</p>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer" />
+            <div
+              class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-blue-600"
+            ></div>
+          </label>
+          <div class="flex items-center gap-x-1">
+            <p>Pay Yearly</p>
+            <div class="relative group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-500 cursor-help"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M12 21a9 9 0 100-18 9 9 0 000 18z"
+                />
+              </svg>
+              <div
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block"
+              >
+                <div
+                  class="bg-gray-900 text-white text-sm rounded-lg py-2 px-4 relative"
+                >
+                  Get Two Months Free!
+                  <div
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-2 h-2 bg-gray-900"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Essential Plan -->
+        <div class="border rounded-lg p-8 space-y-8">
+          <div class="space-y-4 text-center">
+            <h3 class="text-2xl font-bold">Essential</h3>
+            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
+            <div class="text-3xl font-bold">
+              ৳ 2,500<sup class="text-lg">/month</sup>
+            </div>
+          </div>
+          
+          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            Order Now
+          </button>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited Users</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited SKU's</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited Purchase Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Real-Time Order Tracking</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Courier Integration</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Automated Inventory Management</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Advanced Fraud Detection</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Daily data backup</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </div>
+              <span>Accounting</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </div>
+              <span>Priority Support</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </div>
+              <span>Basic Customization</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </div>
+              <span>Custom Feature</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="border rounded-lg p-8 space-y-8 bg-green-50">
+          <div class="space-y-4 text-center">
+            <h3 class="text-2xl font-bold">Professional</h3>
+            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
+            <div class="text-3xl font-bold">
+              ৳ 5,000<sup class="text-lg">/month</sup>
+            </div>
+          </div>
+          
+          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            Order Now
+          </button>
+
+          <div class="space-y-4">
+            <!-- Same features as Essential with all green checkmarks -->
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited Users</span>
+            </div>
+            <!-- Repeat all features with green checkmarks -->
+            <!-- Copy all features from Essential plan but with green checkmarks for all -->
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="border rounded-lg p-8 space-y-8">
+          <div class="space-y-4 text-center">
+            <h3 class="text-2xl font-bold">Enterprise</h3>
+            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
+            <div class="text-3xl font-bold">
+              ৳ 10,000<sup class="text-lg">/month</sup>
+            </div>
+          </div>
+          
+          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+            Order Now
+          </button>
+
+          <div class="space-y-4">
+            <!-- Same features as Essential with all green checkmarks -->
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
+                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span>Unlimited Users</span>
+            </div>
+            <!-- Repeat all features with green checkmarks -->
+            <!-- Copy all features from Essential plan but with green checkmarks for all -->
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
