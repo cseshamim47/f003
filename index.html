@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link href="/assets/css/output.css" rel="stylesheet" />
@@ -122,7 +122,7 @@
         </div>
         <div class="container mx-auto text-center md:text-left">
           <button
-            class="font-bold text-white bg-green lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
+            class="font-bold text-white bg-customGreen lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
           >
             Try Karbari web app
           </button>
@@ -176,7 +176,7 @@
     <!-- Feature List Section -->
     <section class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24">
       <p
-        class="text-center text-[14px] md:text-[16px] font-semibold text-green"
+        class="text-center text-[14px] md:text-[16px] font-semibold text-customGreen"
       >
         Short feature list of Karbari app
       </p>
@@ -555,155 +555,715 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-manrope">
         <!-- Essential Plan -->
-        <div class="border rounded-lg p-8 space-y-8">
-          <div class="space-y-4 text-center">
-            <h3 class="text-2xl font-bold">Essential</h3>
-            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
-            <div class="text-3xl font-bold">
-              ৳ 2,500<sup class="text-lg">/month</sup>
+        <div class="border rounded-lg p-4 space-y-8">
+          <div class="space-y-4 text-center md:text-left">
+            <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
+              Essential
+            </h3>
+            <p class="text-[#64748B] text-[14px] lg:text-[16px]">
+              Ideal for businesses looking to streamline their e-commerce
+              operations.
+            </p>
+            <div
+              class="text-[40px] md:text-[43px] lg:text-[46px] font-semibold"
+            >
+              ৳ 2,500<sup class="text-[14px] text-[#4B5768] font-normal"
+                >/month</sup
+              >
             </div>
           </div>
-          
-          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+
+          <button
+            class="w-full py-3 px-6 bg-customGreen text-white rounded-lg hover:bg-customGreen/90 transition"
+          >
             Order Now
           </button>
 
           <div class="space-y-4">
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited Users</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited Orders</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited SKU's</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited Purchase Orders</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Real-Time Order Tracking</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Courier Integration</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Automated Inventory Management</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Advanced Fraud Detection</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Daily data backup</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-cross.svg"
+                alt="pricing cross"
+                class="w-6 h-6"
+              />
               <span>Accounting</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-cross.svg"
+                alt="pricing cross"
+                class="w-6 h-6"
+              />
               <span>Priority Support</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-cross.svg"
+                alt="pricing cross"
+                class="w-6 h-6"
+              />
               <span>Basic Customization</span>
             </div>
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-gray-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-cross.svg"
+                alt="pricing cross"
+                class="w-6 h-6"
+              />
               <span>Custom Feature</span>
             </div>
           </div>
         </div>
 
-        <!-- Professional Plan -->
-        <div class="border rounded-lg p-8 space-y-8 bg-green-50">
-          <div class="space-y-4 text-center">
-            <h3 class="text-2xl font-bold">Professional</h3>
-            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
-            <div class="text-3xl font-bold">
-              ৳ 5,000<sup class="text-lg">/month</sup>
+        <!-- Comprehensive Plan -->
+        <div class="border rounded-lg p-4 space-y-8 bg-customGreen text-white">
+          <div class="space-y-4 text-center md:text-left">
+            <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
+              Comprehensive
+            </h3>
+            <p class="text-[#F7F8F9] text-[14px] lg:text-[16px]">
+              Designed for businesses seeking comprehensive management
+              solutions.
+            </p>
+            <div
+              class="text-[40px] md:text-[43px] lg:text-[46px] font-semibold"
+            >
+              ৳ 6,000<sup class="text-[14px] text-neutral-50 font-normal"
+                >/month</sup
+              >
             </div>
           </div>
-          
-          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+
+          <button
+            class="w-full py-3 px-6 bg-white text-customGreen rounded-lg hover:bg-gray-100 transition"
+          >
             Order Now
           </button>
 
           <div class="space-y-4">
-            <!-- Same features as Essential with all green checkmarks -->
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited Users</span>
             </div>
-            <!-- Repeat all features with green checkmarks -->
-            <!-- Copy all features from Essential plan but with green checkmarks for all -->
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited SKU's</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited Purchase Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Real-Time Order Tracking</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Courier Integration</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Automated Inventory Management</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Advanced Fraud Detection</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Daily data backup</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Accounting</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Priority Support</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Basic Customization</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-cross.svg"
+                alt="pricing cross"
+                class="w-6 h-6"
+              />
+              <span>Custom Feature</span>
+            </div>
           </div>
         </div>
 
-        <!-- Enterprise Plan -->
-        <div class="border rounded-lg p-8 space-y-8">
-          <div class="space-y-4 text-center">
-            <h3 class="text-2xl font-bold">Enterprise</h3>
-            <p class="text-gray-600">Ideal for businesses looking to streamline their e-commerce operations.</p>
-            <div class="text-3xl font-bold">
-              ৳ 10,000<sup class="text-lg">/month</sup>
+        <!-- Custom Plan -->
+        <div class="border rounded-lg p-4 space-y-8">
+          <div class="space-y-4 text-center md:text-left">
+            <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
+              Custom
+            </h3>
+            <p class="text-[#64748B] text-[14px] lg:text-[16px]">
+              Ideal for businesses who need personalized services and features.
+            </p>
+            <div
+              class="text-[30px] md:text-[33px] lg:text-[36px] font-semibold"
+            >
+              Negotiable<sup class="text-[14px] text-[#4B5768] font-normal pl-2"
+                >pricing</sup
+              >
             </div>
           </div>
-          
-          <button class="w-full py-3 px-6 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">
+
+          <button
+            class="w-full py-3 px-6 border border-customGreen hover:text-white text-customGreen rounded-lg hover:bg-customGreen/90 transition"
+          >
             Order Now
           </button>
 
           <div class="space-y-4">
-            <!-- Same features as Essential with all green checkmarks -->
             <div class="flex items-center gap-3">
-              <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              </div>
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
               <span>Unlimited Users</span>
             </div>
-            <!-- Repeat all features with green checkmarks -->
-            <!-- Copy all features from Essential plan but with green checkmarks for all -->
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited SKU's</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Unlimited Purchase Orders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Real-Time Order Tracking</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Courier Integration</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Automated Inventory Management</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Advanced Fraud Detection</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Daily data backup</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Accounting</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Priority Support</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Basic Customization</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <img
+                src="./assets/images/pricing-tick.svg"
+                alt="pricing tick"
+                class="w-6 h-6"
+              />
+              <span>Custom Feature</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Karbari Section -->
+    <section
+      class="why-karbari font-jakarta space-y-6 md:space-y-10 lg:space-y-14 xl:space-y-16"
+    >
+      <div
+        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+      >
+        <div class="space-y-3 text-center">
+          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
+            Why Choose Karbari?
+          </h2>
+          <p class="text-[14px] md:text-[20px] lg:text-[26px] font-semibold">
+            Maximizing Your Business Potential with Proven, Powerful Tools
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#FAFAFA]">
+        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+            <div class="flex items-center justify-center order-2 md:order-1">
+              <img
+                src="./assets/images/unmatched-efficiency.svg"
+                alt="unmatched efficiency image"
+                class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+              />
+            </div>
+            <div
+              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1 md:order-2 md:pr-6 lg:pr-12"
+            >
+              <h2
+                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
+              >
+                Unmatched Efficiency
+              </h2>
+              <p
+                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
+              >
+                Karbari streamlines every aspect of your e-commerce and
+                f-commerce operations. From order processing to delivery
+                tracking and inventory management, our platform is designed to
+                optimize your workflow and save you time. Experience the power
+                of automation and focus on growing your business instead of
+                managing mundane tasks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+            <div
+              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1"
+            >
+              <h2
+                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
+              >
+                Advanced Integration Capabilities
+              </h2>
+              <p
+                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
+              >
+                Seamlessly connect with major courier services like Pathao and
+                Steadfast, and leverage our WordPress plugin for real-time order
+                syncing. Karbari is all about creating a cohesive ecosystem
+                where all components of your online business communicate
+                flawlessly, enhancing efficiency and reliability.
+              </p>
+            </div>
+            <div class="flex items-center justify-center order-2">
+              <img
+                src="./assets/images/advanced-integration.svg"
+                alt="advanced integration image"
+                class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+      >
+        <div class="space-y-3 text-center">
+          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
+            Scalability at Your Fingertips
+          </h2>
+          <p class="text-[14px] md:text-[16px] text-gray-700">
+            Whether you’re a small startup or a large enterprise, Karbari grows
+            with you. Our plans are designed to cater to businesses of all sizes
+            with no limits on the number of users or orders. Scale your
+            operations effortlessly without any additional software overhead.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#FAFAFA]">
+        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+            <div class="flex items-center justify-center order-2 md:order-1">
+              <img
+                src="./assets/images/security.svg"
+                alt="security image"
+                class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+              />
+            </div>
+            <div
+              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1 md:order-2 md:pr-6 lg:pr-12"
+            >
+              <h2
+                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
+              >
+                Reliable Security and Data Protection
+              </h2>
+              <p
+                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
+              >
+                Your data’s security is our top priority. With daily automatic
+                backups and off-site storage, we ensure your business data is
+                protected against any unforeseen events. Choose Karbari for
+                peace of mind, knowing your data is safe and always available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+            <div
+              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1"
+            >
+              <h2
+                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
+              >
+                Custom Solutions for Complex Needs
+              </h2>
+              <p
+                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
+              >
+                Every business is unique, and sometimes a one-size-fits-all
+                solution just doesn’t cut it. That’s why Karbari offers
+                customizable plans that can be tailored to meet the specific
+                demands of your business. Get exactly what you need with our
+                Custom Enterprise Plan.
+              </p>
+            </div>
+            <div class="flex items-center justify-center order-2">
+              <img
+                src="./assets/images/custom-solution.svg"
+                alt="custom solution image"
+                class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+      >
+        <div class="space-y-3 text-center">
+          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
+            Local Insight, Global Standards
+          </h2>
+          <p class="text-[14px] md:text-[16px] text-gray-700">
+            Karbari combines local market understanding with global
+            technological standards to deliver a solution that’s not just
+            effective but also relevant to your specific business environment.
+            Benefit from a product that appreciates local challenges while
+            providing world-class quality.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="testimonials container mx-auto font-poppins p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+    >
+      <div class="space-y-6 text-center">
+        <p
+          class="text-center text-[14px] md:text-[16px] font-semibold text-customGreen"
+        >
+          Our Happy Karbari App Users
+        </p>
+        <h2
+          class="text-center text-[24px] md:text-[32px] lg:text-[52px] font-bold"
+        >
+          Don’t just take our words
+        </h2>
+      </div>
+
+      <div class="relative group hover:cursor-pointer">
+        <div
+          class="w-full aspect-video bg-gray-100 rounded-2xl overflow-hidden"
+        >
+          <img
+            src="./assets/images/video-bg.svg"
+            alt="Video Thumbnail"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent h-full rounded-2xl"
+          ></div>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <button
+              class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 transition-transform duration-300 group-hover:scale-110"
+            >
+              <img src="./assets/images/play-icon.svg" alt="play icon" />
+            </button>
+          </div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 lg:p-8">
+            <p
+              class="text-center text-white text-[14px] md:text-[16px] lg:text-[18px]"
+            >
+              See how we helped Groover to grow 11x faster
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-8"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 gap-y-16">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+          <img
+            src="./assets/images/testimonial-person-1.svg"
+            alt="testimonial 1"
+            class="h-[125px] md:h-[150px]"
+          />
+          <div class="space-y-4  text-center md:text-left">
+            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+            <p class="text-[14px] lg:text-[16px]">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
+              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+          <img
+            src="./assets/images/testimonial-person-2.svg"
+            alt="testimonial 2"
+            class="h-[125px] md:h-[150px]"
+          />
+          <div class="space-y-4  text-center md:text-left">
+            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+            <p class="text-[14px] lg:text-[16px]">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
+              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+          <img
+            src="./assets/images/testimonial-person-1.svg"
+            alt="testimonial 3"
+            class="h-[125px] md:h-[150px]"
+          />
+          <div class="space-y-4  text-center md:text-left">
+            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+            <p class="text-[14px] lg:text-[16px]">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
+              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+          <img
+            src="./assets/images/testimonial-person-2.svg"
+            alt="testimonial 4"
+            class="h-[125px] md:h-[150px]"
+          />
+          <div class="space-y-4  text-center md:text-left">
+            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+            <p class="text-[14px] lg:text-[16px]">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
+              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="container mx-auto p-4 relative">
+      <img src="./assets/images/call-to-action.svg" alt="call to action" class="w-full pointer-events-none">
+      <div class="absolute inset-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-12 lg:px-24 py-4 md:py-8 text-white text-center md:text-left">
+        <div class="space-y-1 md:space-y-4 mb-2 md:mb-0">
+            <h2 class="text-[16px] sm:text-[18px] md:text-[24px] font-semibold">Begin your journey today</h2>
+            <p class="text-[10px] sm:text-[12px] md:text-[16px]">Buildings are constructed in stages. begin with our offer today.</p>
+        </div>
+        <div>
+            <button class="bg-gradient-to-r from-[#15AA00] to-[#4FD03B] px-3 md:px-6 py-1.5 md:py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-xs sm:text-sm md:text-base">Get Started</button>
         </div>
       </div>
     </section>

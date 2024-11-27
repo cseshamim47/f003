@@ -6,9 +6,10 @@ module.exports = {
       fontFamily: {
         jakarta: ["Plus Jakarta Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"]
       },
       colors: {
-        green: "#0E6F00"
+        customGreen: "#0E6F00"
       }
     },
   },
