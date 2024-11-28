@@ -18,7 +18,7 @@
     <!-- Hero Section -->
     <section class="hero font-jakarta bg-[#FAFAFA]">
       <header class="w-full font-jakarta">
-        <nav class="container mx-auto py-4 md:px-0 px-4">
+        <nav class="container mx-auto py-4 px-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-x-24">
               <div class="text-2xl font-bold">
@@ -107,7 +107,7 @@
       </header>
 
       <div class="mx-auto mt-10 lg:mt-16 xl:mt-20 relative">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4">
           <h1
             class="text-center md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:w-4/5 w-full"
           >
@@ -120,7 +120,7 @@
             services for seamless operations.
           </p>
         </div>
-        <div class="container mx-auto text-center md:text-left">
+        <div class="container mx-auto px-4 text-center md:text-left">
           <button
             class="font-bold text-white bg-customGreen lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
           >
@@ -129,7 +129,7 @@
         </div>
 
         <div
-          class="container mx-auto mt-16 space-y-4 flex flex-col justify-center items-center md:items-start"
+          class="container mx-auto px-4 mt-16 space-y-4 flex flex-col justify-center items-center md:items-start"
         >
           <img
             src="./assets/images/stars-yellow.svg"
@@ -157,7 +157,7 @@
           </div>
         </div>
 
-        <div class="mt-[50px] md:mt-[100px] h-1"></div>
+        <div class="mt-[50px] md:mt-[100px] h-1 px-4"></div>
 
         <img
           src="./assets/images/hero-lines.svg"
@@ -307,7 +307,7 @@
         </div>
 
         <div class="grid gap-8 md:gap-12 content-between h-full">
-          <div class="bg-gray-400 rounded-lg p-6 pt-8 md:pb-16 pb-10 space-y-6">
+          <div class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative">
             <img src="./assets/images/edit.svg" alt="edit" class="w-16" />
             <h3 class="text-[16px] lg:text-[18px] font-semibold">
               Out of the box Customization Capabilities
@@ -326,7 +326,7 @@
             </ul>
           </div>
 
-          <div class="bg-gray-400 rounded-lg p-6 pt-8 md:pb-16 pb-10 space-y-6">
+          <div class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative">
             <img src="./assets/images/fraud.svg" alt="fraud" class="w-16" />
             <h3 class="text-[16px] lg:text-[18px] font-semibold">
               Advanced Fraud Detection
@@ -512,18 +512,18 @@
           That Best Fits Your Business
         </h2>
       </div>
-      <div class="border">
-        <div class="flex gap-x-4 items-center border justify-center p-4">
-          <p>Pay Monthly</p>
+      <div>
+        <div class="flex gap-x-4 items-center">
+          <p class="w-1/2  text-right md:py-10">Pay Monthly</p>
           <label class="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" class="sr-only peer" />
             <div
               class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-blue-600"
             ></div>
           </label>
-          <div class="flex items-center gap-x-1">
+          <div class="flex items-center gap-x-1 w-1/2 md:py-10 relative">
             <p>Pay Yearly</p>
-            <div class="relative group">
+            <div class="relative group md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 text-gray-500 cursor-help"
@@ -551,8 +551,13 @@
                 </div>
               </div>
             </div>
+
+            <div class="absolute -bottom-3 left-3 md:block hidden">
+              <img src="./assets/images/two-months-free.svg" alt="two months free" class="w-[280px] pointer-events-none">
+            </div>
           </div>
         </div>
+        
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-manrope">
@@ -1183,71 +1188,99 @@
 
       <div class="h-8"></div>
       <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 gap-y-16">
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
           <img
             src="./assets/images/testimonial-person-1.svg"
             alt="testimonial 1"
             class="h-[125px] md:h-[150px]"
           />
-          <div class="space-y-4  text-center md:text-left">
-            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+          <div class="space-y-4 text-center md:text-left">
+            <img
+              src="./assets/images/stars-green.svg"
+              alt="stars green"
+              class="mx-auto md:mx-0"
+            />
             <p class="text-[14px] lg:text-[16px]">
               "We love Landingfolio! Our designers were using it for their
               projects, so we already knew what kind of design they want."
             </p>
             <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
-              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+              Jenny Wilson
+              <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
             </p>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
           <img
             src="./assets/images/testimonial-person-2.svg"
             alt="testimonial 2"
             class="h-[125px] md:h-[150px]"
           />
-          <div class="space-y-4  text-center md:text-left">
-            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+          <div class="space-y-4 text-center md:text-left">
+            <img
+              src="./assets/images/stars-green.svg"
+              alt="stars green"
+              class="mx-auto md:mx-0"
+            />
             <p class="text-[14px] lg:text-[16px]">
               "We love Landingfolio! Our designers were using it for their
               projects, so we already knew what kind of design they want."
             </p>
             <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
-              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+              Jenny Wilson
+              <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
             </p>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
           <img
             src="./assets/images/testimonial-person-1.svg"
             alt="testimonial 3"
             class="h-[125px] md:h-[150px]"
           />
-          <div class="space-y-4  text-center md:text-left">
-            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+          <div class="space-y-4 text-center md:text-left">
+            <img
+              src="./assets/images/stars-green.svg"
+              alt="stars green"
+              class="mx-auto md:mx-0"
+            />
             <p class="text-[14px] lg:text-[16px]">
               "We love Landingfolio! Our designers were using it for their
               projects, so we already knew what kind of design they want."
             </p>
             <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
-              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+              Jenny Wilson
+              <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
             </p>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-8"
+        >
           <img
             src="./assets/images/testimonial-person-2.svg"
             alt="testimonial 4"
             class="h-[125px] md:h-[150px]"
           />
-          <div class="space-y-4  text-center md:text-left">
-            <img src="./assets/images/stars-green.svg" alt="stars green" class="mx-auto md:mx-0"/>
+          <div class="space-y-4 text-center md:text-left">
+            <img
+              src="./assets/images/stars-green.svg"
+              alt="stars green"
+              class="mx-auto md:mx-0"
+            />
             <p class="text-[14px] lg:text-[16px]">
               "We love Landingfolio! Our designers were using it for their
               projects, so we already knew what kind of design they want."
             </p>
             <p class="text-[14px] md:text-[16px] lg:text-[18px] font-semibold">
-              Jenny Wilson <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
+              Jenny Wilson
+              <span class="ml-2 text-gray-500 font-normal">Grower.io</span>
             </p>
           </div>
         </div>
@@ -1256,15 +1289,286 @@
 
     <!-- Call to Action Section -->
     <section class="container mx-auto p-4 relative">
-      <img src="./assets/images/call-to-action.svg" alt="call to action" class="w-full pointer-events-none">
-      <div class="absolute inset-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-12 lg:px-24 py-4 md:py-8 text-white text-center md:text-left">
+      <img
+        src="./assets/images/call-to-action.svg"
+        alt="call to action"
+        class="w-full pointer-events-none"
+      />
+      <div
+        class="absolute inset-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-12 lg:px-24 py-4 md:py-8 text-white text-center md:text-left"
+      >
         <div class="space-y-1 md:space-y-4 mb-2 md:mb-0">
-            <h2 class="text-[16px] sm:text-[18px] md:text-[24px] font-semibold">Begin your journey today</h2>
-            <p class="text-[10px] sm:text-[12px] md:text-[16px]">Buildings are constructed in stages. begin with our offer today.</p>
+          <h2 class="text-[16px] sm:text-[18px] md:text-[24px] font-semibold">
+            Begin your journey today
+          </h2>
+          <p class="text-[10px] sm:text-[12px] md:text-[16px]">
+            Buildings are constructed in stages. begin with our offer today.
+          </p>
         </div>
         <div>
-            <button class="bg-gradient-to-r from-[#15AA00] to-[#4FD03B] px-3 md:px-6 py-1.5 md:py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-xs sm:text-sm md:text-base">Get Started</button>
+          <button
+            class="bg-gradient-to-r from-[#15AA00] to-[#4FD03B] px-3 md:px-6 py-1.5 md:py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-xs sm:text-sm md:text-base"
+          >
+            Get Started
+          </button>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section
+      class="contactPage container mx-auto p-4 font-poppins space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+    >
+      <div class="space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20">
+        <div class="space-y-3 text-center">
+          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
+            Let’s level up your business, together
+          </h2>
+          <p class="text-[14px] md:text-[16px] text-gray-700">
+            You can reach us anytime via
+            <a href="mailto:sis@karbari.app" class="text-[#6941C6]"
+              >sis@karbari.app</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="hidden md:block h-full">
+            <img
+              src="./assets/images/contact.svg"
+              alt="contact illustration"
+              class="w-full h-full object-cover max-w-lg mx-auto pointer-events-none"
+            />
+          </div>
+
+          <div class="w-full max-w-lg mx-auto">
+            <form class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="yourmail@example.com"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Phone Number</label
+                >
+                <div
+                  class="flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-[#7F56D9] focus-within:border-transparent"
+                >
+                  <select
+                    id="country"
+                    name="country"
+                    class="w-24 px-2 py-2 border-r border-gray-300 focus:outline-none rounded-l-lg"
+                  >
+                    <option value="+1">US</option>
+                    <option value="+44">UK</option>
+                    <option value="+91">IN</option>
+                    <option value="+86">CN</option>
+                    <option value="+81">JP</option>
+                    <option value="+880">BD</option>
+                  </select>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="(555) 000-0000"
+                    class="flex-1 px-4 py-2 focus:outline-none rounded-r-lg"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >How can we help?</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your project..."
+                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                ></textarea>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Services</label
+                >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="website"
+                      name="services"
+                      value="website"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="website"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >Website design</label
+                    >
+                  </div>
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="content"
+                      name="services"
+                      value="content"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="content"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >Content creation</label
+                    >
+                  </div>
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="ux"
+                      name="services"
+                      value="ux"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="ux"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >UX design</label
+                    >
+                  </div>
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="hosting"
+                      name="services"
+                      value="hosting"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="hosting"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >Superfast Hosting</label
+                    >
+                  </div>
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="app"
+                      name="services"
+                      value="app"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="app"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >Karbari App</label
+                    >
+                  </div>
+                  <div class="flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      id="other"
+                      name="services"
+                      value="other"
+                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                    />
+                    <label
+                      for="other"
+                      class="ml-2 text-sm text-gray-700 cursor-pointer"
+                      >Other</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-[#7F56D9] text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-[#FAFAFA]">
+      <div class="container mx-auto px-4 py-8 md:py-14">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
+          <div class="space-y-4 md:space-y-8 text-center md:text-left">
+            <img src="./assets/images/karbari-logo.svg" alt="karbari logo" class="h-6 md:h-8 mx-auto md:mx-0" />
+            <p class="text-[14px] md:text-[16px] text-gray-600">Clarity gives you the blocks and components you need to create a truly professional website.</p>
+          </div>
+          <div class="space-y-4 text-center md:text-left flex flex-col items-center ">
+            <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
+              <p class="font-semibold text-[16px] md:text-[18px]">Company</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">About</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Features</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Works</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Career</p>
+            </div>
+          </div>
+          <div class="space-y-4 text-center md:text-left flex flex-col items-center">
+            <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
+              <p class="font-semibold text-[16px] md:text-[18px]">Help</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Customer Support</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Delivery Details</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Terms & Conditions</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">Privacy Policy</p>
+            </div>
+          </div>
+          <div class="space-y-4 text-center md:text-left flex flex-col items-center">
+            <div class="space-y-3">
+              <p class="font-semibold text-[16px] md:text-[18px] text-gray-600">Newsletter</p>
+              <div class="h-1"></div>
+              <input 
+                type="email" 
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 text-[14px] border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+              >
+              <button class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity text-[14px]">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto text-center p-8 border-t border-gray-200">
+        <p class="text-[14px] md:text-[16px] text-gray-600">© Copyright 2022, All Rights Reserved by Karbari.App</p>
       </div>
     </section>
     <script src="/assets/js/main.js"></script>

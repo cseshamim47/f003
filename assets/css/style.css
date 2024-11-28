@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.glowing-card::after,
+.glowing-card::before {
+  content: "";
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  background-image: conic-gradient(
+    #ff4444,
+    #ad44ff,
+    #448fff,
+    #44d2ff,
+    #8bff44,
+    #ff4444
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 0.5rem;
+}
+
+.glowing-card::before {
+  filter: blur(10px);
+  opacity: 0.5;
+}
