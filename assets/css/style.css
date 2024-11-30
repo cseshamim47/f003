@@ -27,3 +27,31 @@
   filter: blur(10px);
   opacity: 0.5;
 }
+
+
+.custom-checkbox {
+    @apply appearance-none w-6 h-6 border border-gray-300 rounded-md bg-white cursor-pointer transition-all duration-300;
+
+    /* Add focus styles */
+    @apply focus:outline-none focus:ring-2 focus:ring-primary;
+
+    /* Add checked styles */
+    position: relative;
+  }
+
+  .custom-checkbox:checked {
+    @apply bg-primary border-primary;
+  }
+
+  .custom-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    
+  }

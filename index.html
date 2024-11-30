@@ -846,10 +846,9 @@
             <p class="text-[#64748B] text-[14px] lg:text-[16px]">
               Ideal for businesses who need personalized services and features.
             </p>
-            <div
-              class="text-[30px] lg:text-[36px] font-semibold pb-0 sm:pb-3"
-            >
-              Negotiable <sup class="text-[14px] text-[#4B5768] font-normal">pricing</sup> 
+            <div class="text-[30px] lg:text-[36px] font-semibold pb-0 sm:pb-3">
+              Negotiable
+              <sup class="text-[14px] text-[#4B5768] font-normal">pricing</sup>
             </div>
           </div>
           <button
@@ -1164,8 +1163,15 @@
         </h2>
       </div>
 
-      <div class="relative group hover:cursor-pointer" id="videoContainer" onclick="playVideo()">
-        <div id="thumbnailContainer" class="w-full aspect-video bg-gray-100 rounded-2xl overflow-hidden">
+      <div
+        class="relative group hover:cursor-pointer"
+        id="videoContainer"
+        onclick="playVideo()"
+      >
+        <div
+          id="thumbnailContainer"
+          class="w-full aspect-video bg-gray-100 rounded-2xl overflow-hidden"
+        >
           <img
             src="./assets/images/video-bg.svg"
             alt="Video Thumbnail"
@@ -1189,10 +1195,13 @@
             </p>
           </div>
         </div>
-        <div id="videoWrapper" class="hidden w-full aspect-video rounded-2xl overflow-hidden">
-          <iframe 
+        <div
+          id="videoWrapper"
+          class="hidden w-full aspect-video rounded-2xl overflow-hidden"
+        >
+          <iframe
             id="youtubeVideo"
-            width="100%" 
+            width="100%"
             height="100%"
             src="https://www.youtube.com/embed/a3ICNMQW7Ok"
             title="YouTube video player"
@@ -1203,9 +1212,10 @@
         </div>
         <script>
           function playVideo() {
-            document.getElementById('thumbnailContainer').style.display = 'none';
-            document.getElementById('videoWrapper').style.display = 'block';
-            document.getElementById('youtubeVideo').src += "?autoplay=1";
+            document.getElementById("thumbnailContainer").style.display =
+              "none";
+            document.getElementById("videoWrapper").style.display = "block";
+            document.getElementById("youtubeVideo").src += "?autoplay=1";
           }
         </script>
       </div>
@@ -1321,8 +1331,8 @@
       <div
         class="absolute inset-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-12 lg:px-24 py-4 md:py-8 text-white text-center md:text-left"
       >
-        <div class="space-y-1 md:space-y-4 mb-2 md:mb-0">
-          <h2 class="text-[16px] sm:text-[18px] md:text-[24px] font-semibold">
+        <div class="sm:space-y-1 md:space-y-4 mb-1 md:mb-0">
+          <h2 class="text-[16px] sm:text-[18px] md:text-[24px] lg:text-[40px] font-semibold">
             Begin your journey today
           </h2>
           <p class="text-[10px] sm:text-[12px] md:text-[16px]">
@@ -1381,7 +1391,7 @@
                   id="name"
                   name="name"
                   placeholder="Your name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
                 />
               </div>
 
@@ -1396,7 +1406,7 @@
                   id="email"
                   name="email"
                   placeholder="yourmail@example.com"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
                 />
               </div>
 
@@ -1442,7 +1452,7 @@
                   name="message"
                   rows="4"
                   placeholder="Tell us about your project..."
-                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
                 ></textarea>
               </div>
 
@@ -1457,13 +1467,14 @@
                       id="website"
                       name="services"
                       value="website"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="website"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >Website design</label
                     >
+                      Website design
+                    </label>
                   </div>
                   <div class="flex items-center cursor-pointer">
                     <input
@@ -1471,13 +1482,14 @@
                       id="content"
                       name="services"
                       value="content"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="content"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >Content creation</label
                     >
+                      Content creation
+                    </label>
                   </div>
                   <div class="flex items-center cursor-pointer">
                     <input
@@ -1485,13 +1497,14 @@
                       id="ux"
                       name="services"
                       value="ux"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="ux"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >UX design</label
                     >
+                      UX design
+                    </label>
                   </div>
                   <div class="flex items-center cursor-pointer">
                     <input
@@ -1499,13 +1512,14 @@
                       id="hosting"
                       name="services"
                       value="hosting"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="hosting"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >Superfast Hosting</label
                     >
+                      Superfast Hosting
+                    </label>
                   </div>
                   <div class="flex items-center cursor-pointer">
                     <input
@@ -1513,13 +1527,14 @@
                       id="app"
                       name="services"
                       value="app"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="app"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >Karbari App</label
                     >
+                      Karbari App
+                    </label>
                   </div>
                   <div class="flex items-center cursor-pointer">
                     <input
@@ -1527,13 +1542,14 @@
                       id="other"
                       name="services"
                       value="other"
-                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
+                      class="custom-checkbox"
                     />
                     <label
                       for="other"
                       class="ml-2 text-sm text-gray-700 cursor-pointer"
-                      >Other</label
                     >
+                      Other
+                    </label>
                   </div>
                 </div>
               </div>
