@@ -31,9 +31,9 @@
                 </a>
               </div>
               <div class="hidden md:flex space-x-16 font-medium">
-                <a href="#" class="hover:text-gray-600">Features</a>
-                <a href="#" class="hover:text-gray-600">Pricing</a>
-                <a href="#" class="hover:text-gray-600">Support</a>
+                <a href="#features" class="hover:text-primary">Features</a>
+                <a href="#pricing" class="hover:text-primary">Pricing</a>
+                <a href="#support" class="hover:text-primary">Support</a>
               </div>
             </div>
             <div class="hidden md:flex items-center font-bold">
@@ -43,7 +43,7 @@
                   alt="Karbari Logo"
                   class="w-full h-6"
                 />
-                <span class="text-[#444444]">Login</span>
+                <span class="text-[#444444] hover:text-primary">Login</span>
               </a>
             </div>
             <div class="md:hidden">
@@ -89,9 +89,9 @@
                 </svg>
               </button>
               <div class="flex flex-col space-y-6 mt-12 font-medium">
-                <a href="#" class="hover:text-gray-600">Features</a>
-                <a href="#" class="hover:text-gray-600">Pricing</a>
-                <a href="#" class="hover:text-gray-600">Support</a>
+                <a href="#features" class="hover:text-gray-600">Features</a>
+                <a href="#pricing" class="hover:text-gray-600">Pricing</a>
+                <a href="#support" class="hover:text-gray-600">Support</a>
                 <a href="#" class="flex items-center gap-2 font-bold">
                   <img
                     src="./assets/images/login-icon.svg"
@@ -122,7 +122,7 @@
         </div>
         <div class="container mx-auto px-4 text-center md:text-left">
           <button
-            class="font-bold text-white bg-customGreen lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
+            class="font-bold text-white bg-primary lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
           >
             Try Karbari web app
           </button>
@@ -174,9 +174,12 @@
     </section>
 
     <!-- Feature List Section -->
-    <section class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24">
+    <section
+      class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24"
+      id="features"
+    >
       <p
-        class="text-center text-[14px] md:text-[16px] font-semibold text-customGreen"
+        class="text-center text-[14px] md:text-[16px] font-semibold text-primary"
       >
         Short feature list of Karbari app
       </p>
@@ -307,7 +310,9 @@
         </div>
 
         <div class="grid gap-8 md:gap-12 content-between h-full">
-          <div class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative">
+          <div
+            class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative"
+          >
             <img src="./assets/images/edit.svg" alt="edit" class="w-16" />
             <h3 class="text-[16px] lg:text-[18px] font-semibold">
               Out of the box Customization Capabilities
@@ -326,7 +331,9 @@
             </ul>
           </div>
 
-          <div class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative">
+          <div
+            class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative"
+          >
             <img src="./assets/images/fraud.svg" alt="fraud" class="w-16" />
             <h3 class="text-[16px] lg:text-[18px] font-semibold">
               Advanced Fraud Detection
@@ -499,6 +506,7 @@
     <!-- Pricing Section -->
     <section
       class="pricing container mx-auto p-4 space-y-12 lg:space-y-16 xl:space-y-20"
+      id="pricing"
     >
       <div>
         <h2
@@ -514,11 +522,11 @@
       </div>
       <div>
         <div class="flex gap-x-4 items-center">
-          <p class="w-1/2  text-right md:py-10">Pay Monthly</p>
+          <p class="w-1/2 text-right md:py-10">Pay Monthly</p>
           <label class="relative inline-flex items-center cursor-pointer">
             <input type="checkbox" class="sr-only peer" />
             <div
-              class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-blue-600"
+              class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"
             ></div>
           </label>
           <div class="flex items-center gap-x-1 w-1/2 md:py-10 relative">
@@ -553,11 +561,14 @@
             </div>
 
             <div class="absolute -bottom-3 left-3 md:block hidden">
-              <img src="./assets/images/two-months-free.svg" alt="two months free" class="w-[280px] pointer-events-none">
+              <img
+                src="./assets/images/two-months-free.svg"
+                alt="two months free"
+                class="w-[280px] pointer-events-none"
+              />
             </div>
           </div>
         </div>
-        
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 font-manrope">
@@ -572,6 +583,7 @@
             </p>
             <div
               class="text-[40px] md:text-[43px] lg:text-[46px] font-semibold"
+              id="essential-price"
             >
               ৳ 2,500<sup class="text-[14px] text-[#4B5768] font-normal"
                 >/month</sup
@@ -580,7 +592,7 @@
           </div>
 
           <button
-            class="w-full py-3 px-6 bg-customGreen text-white rounded-lg hover:bg-customGreen/90 transition"
+            class="w-full py-3 px-6 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
           >
             Order Now
           </button>
@@ -693,7 +705,7 @@
           </div>
         </div>
 
-        <div class="border rounded-lg p-4 space-y-8 bg-customGreen text-white">
+        <div class="border rounded-lg p-4 space-y-8 bg-primary text-white">
           <div class="space-y-4 text-center md:text-left">
             <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
               Comprehensive
@@ -704,6 +716,7 @@
             </p>
             <div
               class="text-[40px] md:text-[43px] lg:text-[46px] font-semibold"
+              id="comprehensive-price"
             >
               ৳ 6,000<sup class="text-[14px] text-neutral-50 font-normal"
                 >/month</sup
@@ -712,7 +725,7 @@
           </div>
 
           <button
-            class="w-full py-3 px-6 bg-white text-customGreen rounded-lg hover:bg-gray-100 transition"
+            class="w-full py-3 px-6 bg-white text-primary rounded-lg hover:bg-gray-100 transition"
           >
             Order Now
           </button>
@@ -834,16 +847,13 @@
               Ideal for businesses who need personalized services and features.
             </p>
             <div
-              class="text-[30px] md:text-[33px] lg:text-[36px] font-semibold"
+              class="text-[30px] lg:text-[36px] font-semibold pb-0 sm:pb-3"
             >
-              Negotiable<sup class="text-[14px] text-[#4B5768] font-normal md:pl-2 hidden md:block"
-                >pricing</sup
-              >
+              Negotiable <sup class="text-[14px] text-[#4B5768] font-normal">pricing</sup> 
             </div>
           </div>
-
           <button
-            class="w-full py-3 px-6 border border-customGreen hover:text-white text-customGreen rounded-lg hover:bg-customGreen/90 transition"
+            class="w-full py-3 px-6 border border-primary hover:text-white text-primary rounded-lg hover:bg-primary/90 transition"
           >
             Order Now
           </button>
@@ -1143,7 +1153,7 @@
     >
       <div class="space-y-6 text-center">
         <p
-          class="text-center text-[14px] md:text-[16px] font-semibold text-customGreen"
+          class="text-center text-[14px] md:text-[16px] font-semibold text-primary"
         >
           Our Happy Karbari App Users
         </p>
@@ -1154,10 +1164,8 @@
         </h2>
       </div>
 
-      <div class="relative group hover:cursor-pointer">
-        <div
-          class="w-full aspect-video bg-gray-100 rounded-2xl overflow-hidden"
-        >
+      <div class="relative group hover:cursor-pointer" id="videoContainer" onclick="playVideo()">
+        <div id="thumbnailContainer" class="w-full aspect-video bg-gray-100 rounded-2xl overflow-hidden">
           <img
             src="./assets/images/video-bg.svg"
             alt="Video Thumbnail"
@@ -1167,11 +1175,11 @@
             class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent h-full rounded-2xl"
           ></div>
           <div class="absolute inset-0 flex items-center justify-center">
-            <button
+            <div
               class="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 transition-transform duration-300 group-hover:scale-110"
             >
               <img src="./assets/images/play-icon.svg" alt="play icon" />
-            </button>
+            </div>
           </div>
           <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 lg:p-8">
             <p
@@ -1181,6 +1189,25 @@
             </p>
           </div>
         </div>
+        <div id="videoWrapper" class="hidden w-full aspect-video rounded-2xl overflow-hidden">
+          <iframe 
+            id="youtubeVideo"
+            width="100%" 
+            height="100%"
+            src="https://www.youtube.com/embed/a3ICNMQW7Ok"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <script>
+          function playVideo() {
+            document.getElementById('thumbnailContainer').style.display = 'none';
+            document.getElementById('videoWrapper').style.display = 'block';
+            document.getElementById('youtubeVideo').src += "?autoplay=1";
+          }
+        </script>
       </div>
 
       <div class="h-8"></div>
@@ -1315,15 +1342,16 @@
     <!-- Contact Page -->
     <section
       class="contactPage container mx-auto p-4 font-poppins space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
+      id="support"
     >
       <div class="space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20">
         <div class="space-y-3 text-center">
           <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Let’s level up your business, together
+            Let's level up your business, together
           </h2>
           <p class="text-[14px] md:text-[16px] text-gray-700">
             You can reach us anytime via
-            <a href="mailto:sis@karbari.app" class="text-[#6941C6]"
+            <a href="mailto:sis@karbari.app" class="text-primary"
               >sis@karbari.app</a
             >
           </p>
@@ -1353,7 +1381,7 @@
                   id="name"
                   name="name"
                   placeholder="Your name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
@@ -1368,7 +1396,7 @@
                   id="email"
                   name="email"
                   placeholder="yourmail@example.com"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
@@ -1379,7 +1407,7 @@
                   >Phone Number</label
                 >
                 <div
-                  class="overflow-hidden flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-[#7F56D9] focus-within:border-transparent"
+                  class="overflow-hidden flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent"
                 >
                   <select
                     id="country"
@@ -1414,7 +1442,7 @@
                   name="message"
                   rows="4"
                   placeholder="Tell us about your project..."
-                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#7F56D9] focus:border-transparent"
+                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 ></textarea>
               </div>
 
@@ -1429,7 +1457,7 @@
                       id="website"
                       name="services"
                       value="website"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="website"
@@ -1443,7 +1471,7 @@
                       id="content"
                       name="services"
                       value="content"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="content"
@@ -1457,7 +1485,7 @@
                       id="ux"
                       name="services"
                       value="ux"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="ux"
@@ -1471,7 +1499,7 @@
                       id="hosting"
                       name="services"
                       value="hosting"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="hosting"
@@ -1485,7 +1513,7 @@
                       id="app"
                       name="services"
                       value="app"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="app"
@@ -1499,7 +1527,7 @@
                       id="other"
                       name="services"
                       value="other"
-                      class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-[#7F56D9] cursor-pointer"
+                      class="w-4 h-4 text-primary border-gray-300 focus:ring-2 focus:ring-primary cursor-pointer"
                     />
                     <label
                       for="other"
@@ -1512,7 +1540,7 @@
 
               <button
                 type="submit"
-                class="w-full bg-[#7F56D9] text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
+                class="w-full bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
               >
                 Send Message
               </button>
@@ -1527,37 +1555,70 @@
       <div class="container mx-auto px-4 py-8 md:py-14">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
           <div class="space-y-4 md:space-y-8 text-center md:text-left">
-            <img src="./assets/images/karbari-logo.svg" alt="karbari logo" class="h-6 md:h-8 mx-auto md:mx-0" />
-            <p class="text-[14px] md:text-[16px] text-gray-600">Clarity gives you the blocks and components you need to create a truly professional website.</p>
+            <img
+              src="./assets/images/karbari-logo.svg"
+              alt="karbari logo"
+              class="h-6 md:h-8 mx-auto md:mx-0"
+            />
+            <p class="text-[14px] md:text-[16px] text-gray-600">
+              Clarity gives you the blocks and components you need to create a
+              truly professional website.
+            </p>
           </div>
-          <div class="space-y-4 text-center md:text-left flex flex-col items-center ">
+          <div
+            class="space-y-4 text-center md:text-left flex flex-col items-center"
+          >
             <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
               <p class="font-semibold text-[16px] md:text-[18px]">Company</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">About</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Features</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Works</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Career</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                About
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Features
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Works
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Career
+              </p>
             </div>
           </div>
-          <div class="space-y-4 text-center md:text-left flex flex-col items-center">
+          <div
+            class="space-y-4 text-center md:text-left flex flex-col items-center"
+          >
             <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
               <p class="font-semibold text-[16px] md:text-[18px]">Help</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Customer Support</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Delivery Details</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Terms & Conditions</p>
-              <p class="hover:text-gray-900 cursor-pointer transition-colors">Privacy Policy</p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Customer Support
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Delivery Details
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Terms & Conditions
+              </p>
+              <p class="hover:text-gray-900 cursor-pointer transition-colors">
+                Privacy Policy
+              </p>
             </div>
           </div>
-          <div class="space-y-4 text-center md:text-left flex flex-col items-center">
+          <div
+            class="space-y-4 text-center md:text-left flex flex-col items-center"
+          >
             <div class="space-y-3">
-              <p class="font-semibold text-[16px] md:text-[18px] text-gray-600">Newsletter</p>
+              <p class="font-semibold text-[16px] md:text-[18px] text-gray-600">
+                Newsletter
+              </p>
               <div class="h-1"></div>
-              <input 
-                type="email" 
+              <input
+                type="email"
                 placeholder="Enter your email"
                 class="w-full px-4 py-2 text-[14px] border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+              />
+              <button
+                class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity text-[14px]"
               >
-              <button class="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity text-[14px]">
                 Subscribe Now
               </button>
             </div>
@@ -1565,10 +1626,12 @@
         </div>
       </div>
       <div class="container mx-auto text-center p-8 border-t border-gray-200">
-        <p class="text-[14px] md:text-[16px] text-gray-600">© Copyright 2022, All Rights Reserved by Karbari.App</p>
+        <p class="text-[14px] md:text-[16px] text-gray-600">
+          © Copyright 2022, All Rights Reserved by Karbari.App
+        </p>
       </div>
     </section>
-    
+
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
