@@ -12,12 +12,34 @@ const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 const closeMenu = document.getElementById('closeMenu');
 
-menuBtn.addEventListener('click', () => {
-  mobileMenu.classList.remove('translate-x-full');
+// Function to open menu
+const openMenu = () => {
+    mobileMenu.style.transform = 'translateX(0)';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+};
+
+// Function to close menu
+const closeMenuHandler = () => {
+    mobileMenu.style.transform = 'translateX(100%)';
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+// Event listeners
+menuBtn.addEventListener('click', openMenu);
+closeMenu.addEventListener('click', closeMenuHandler);
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        closeMenuHandler();
+    }
 });
 
-closeMenu.addEventListener('click', () => {
-  mobileMenu.classList.add('translate-x-full');
+// Close menu when pressing Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeMenuHandler();
+    }
 });
 
 
@@ -53,3 +75,9 @@ closeMenu.addEventListener('click', () => {
     }
   });
 
+
+function playVideo() {
+  document.getElementById("thumbnailContainer").style.display = "none";
+  document.getElementById("videoWrapper").style.display = "block"; 
+  document.getElementById("youtubeVideo").src += "?autoplay=1";
+}

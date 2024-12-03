@@ -13,38 +13,38 @@
     <link href="/assets/css/output.css" rel="stylesheet" />
   </head>
   <body
-    class="font-poppins space-y-16 lg:space-y-20 xl:space-y-24 text-gray-900"
+    class="font-poppins space-y-16 lg:space-y-20 xl:space-y-24 text-bodyText"
   >
     <!-- Hero Section -->
-    <section class="hero font-jakarta bg-[#FAFAFA]">
-      <header class="w-full font-jakarta">
-        <nav class="container mx-auto py-4 px-4">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-x-24">
-              <div class="text-2xl font-bold">
-                <a href="#" class="flex items-center">
+    <section class="hero-section">
+      <header class="header-main">
+        <nav class="nav-container">
+          <div class="nav-wrapper">
+            <div class="nav-left">
+              <div class="nav-logo-container">
+                <a href="#" class="nav-logo-link">
                   <img
                     src="./assets/images/karbari-logo.svg"
                     alt="Karbari Logo"
-                    class="w-full h-6"
+                    class="nav-logo-image"
                   />
                 </a>
               </div>
-              <div class="hidden md:flex space-x-16 font-medium">
-                <a href="#features" class="hover:text-primary">Features</a>
-                <a href="#pricing" class="hover:text-primary">Pricing</a>
-                <a href="#support" class="hover:text-primary">Support</a>
+              <div class="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#support" class="nav-link">Support</a>
               </div>
             </div>
-            <div class="hidden md:flex items-center font-bold">
-              <a href="#" class="flex items-center gap-2 group">
+            <div class="nav-login">
+              <a href="#" class="login-link group">
                 <svg
+                  class="login-icon w-5 h-5 md:w-6 md:h-6 group-hover:stroke-primary"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6 group-hover:stroke-primary"
                 >
                   <path
                     stroke-linecap="round"
@@ -52,13 +52,13 @@
                     d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
                   />
                 </svg>
-                <span class="text-[#444444] hover:text-primary">Login</span>
+                <span class="login-text group-hover:text-primary">Login</span>
               </a>
             </div>
-            <div class="md:hidden">
-              <button id="menuBtn" class="focus:outline-none">
+            <div class="mobile-menu-button">
+              <button id="menuBtn" class="menu-button">
                 <svg
-                  class="w-6 h-6"
+                  class="menu-icon"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -73,18 +73,13 @@
               </button>
             </div>
           </div>
+
           <!-- Mobile Menu -->
-          <div
-            id="mobileMenu"
-            class="fixed top-0 right-0 w-64 h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out shadow-lg md:hidden z-50"
-          >
-            <div class="p-6">
-              <button
-                id="closeMenu"
-                class="absolute top-4 right-4 focus:outline-none"
-              >
+          <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+              <button id="closeMenu" class="mobile-close-button">
                 <svg
-                  class="w-6 h-6"
+                  class="menu-icon"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -97,19 +92,19 @@
                   ></path>
                 </svg>
               </button>
-              <h2 class="text-xl font-bold">Menu</h2>
-              <div class="flex flex-col space-y-6 mt-12 font-medium">
-                <a href="#features" class="hover:text-primary">Features</a>
-                <a href="#pricing" class="hover:text-primary">Pricing</a>
-                <a href="#support" class="hover:text-primary">Support</a>
-                <a href="#" class="flex items-center gap-2 font-bold hover:text-primary group">
+              <h2 class="mobile-menu-title">Menu</h2>
+              <div class="mobile-nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#support" class="nav-link">Support</a>
+                <a href="#" class="mobile-login-link group">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-6 h-6 group-hover:stroke-primary"
+                    class="login-icon w-5 h-5 group-hover:stroke-primary"
                   >
                     <path
                       stroke-linecap="round"
@@ -117,7 +112,7 @@
                       d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
                     />
                   </svg>
-                  <span class="text-[#444444] group-hover:text-primary">Login</span>
+                  <span class="login-text group-hover:text-primary">Login</span>
                 </a>
               </div>
             </div>
@@ -125,130 +120,99 @@
         </nav>
       </header>
 
-      <div class="mx-auto mt-10 lg:mt-16 xl:mt-20 relative overflow-hidden">
-        <div class="container mx-auto px-4">
+      <div class="hero-container">
+        <div class="hero-content">
           <img
             src="./assets/images/hero-code-mobile.svg"
             alt="code"
-            class="md:hidden block w-[400px] mb-6 pointer-events-none"
+            class="hero-mobile-code"
           />
-          <h1
-            class="text-center md:text-left text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:w-4/5 w-full"
-          >
+          <h1 class="hero-title">
             Manage your e-commerce business operations with Karbari
           </h1>
-          <p
-            class="text-base lg:text-lg text-center md:text-left md:w-1/2 xl:w-1/3 mt-10 xl:mt-20 text-gray-600 px-4 md:px-0"
-          >
+          <p class="hero-description text-bodyText">
             All-in-one e-commerce business automation tool integrating courier
             services for seamless operations.
           </p>
         </div>
-        <div class="container mx-auto px-4 text-center md:text-left">
-          <button
-            class="font-bold text-white bg-primary lg:px-8 px-6 py-3 lg:py-4 rounded-md mt-[43px] hover:cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out"
-          >
-            Try Karbari web app
-          </button>
+
+        <div class="hero-cta-container">
+          <button class="hero-cta-button">Try Karbari web app</button>
         </div>
 
-        <div
-          class="container mx-auto px-4 mt-16 space-y-4 flex flex-col justify-center items-center md:items-start"
-        >
+        <div class="hero-review-section">
           <img
             src="./assets/images/stars-yellow.svg"
             alt="five-stars"
-            class="w-[109px] h-full"
+            class="hero-stars"
           />
-          <h3 class="text-base lg:text-lg font-bold">
+          <h3 class="hero-review-title">
             Best Business Automation App in market!
           </h3>
-          <p
-            class="text-gray-700 text-[14px] lg:text-[16px] w-full text-center md:text-left md:w-1/2 lg:w-1/4 px-4 md:px-0"
-          >
+          <p class="hero-review-text text-bodyText">
             Consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
             arcu, aliquam nulla tincidunt gravida. Cursus convallis dolor semper
             pretium ornare.
           </p>
-          <div class="flex items-center gap-x-3">
+          <div class="hero-review-author">
             <img
               src="./assets/images/hero-eclipse-photo.svg"
               alt="Kamrul Hasan Murad"
             />
-            <h4 class="text-[14px] lg:text-[16px] font-bold">
-              Kamrul Hasan Murad
-            </h4>
+            <h4 class="hero-review-author-name">Kamrul Hasan Murad</h4>
           </div>
         </div>
 
-        <div class="mt-[50px] md:mt-[100px] h-1 px-4"></div>
+        <div class="hero-decoration"></div>
 
         <img
           src="./assets/images/hero-lines.svg"
           alt="lines"
-          class="absolute bottom-0 right-0 pointer-events-none"
+          class="hero-lines"
         />
 
-        <img
-          src="./assets/images/hero-code.svg"
-          alt="code"
-          class="absolute bottom-28 right-10 md:block hidden lg:right-28 xl:bottom-14 xl:right-64 w-[400px] lg:w-[450px] xl:w-[500px] pointer-events-none"
-        />
+        <img src="./assets/images/hero-code.svg" alt="code" class="hero-code" />
       </div>
     </section>
 
+    
+
     <!-- Feature List Section -->
-    <section
-      class="featureList container px-4 mx-auto mt-16 lg:mt-20 xl:mt-24"
-      id="features"
-    >
-      <p
-        class="text-center text-[14px] md:text-[16px] font-semibold text-primary"
-      >
-        Short feature list of Karbari app
-      </p>
-      <h2
-        class="text-center text-[24px] md:text-[32px] lg:text-[52px] font-bold mt-5 md:mt-8"
-      >
+    <section class="feature-section" id="features">
+      <p class="feature-subtitle">Short feature list of Karbari app</p>
+      <h2 class="feature-title">
         Karbari app's features give you the ultimate flexibility
       </h2>
 
-      <div class="mt-10 grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
-        <div class="space-y-8 h-full text-[#444444]">
-          <div class="space-y-2">
-            <div class="flex items-center justify-start gap-x-4">
+      <div class="feature-grid">
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-item-header">
               <img
                 src="./assets/images/tick.svg"
                 alt="tick mark"
-                class="w-6 h-6"
+                class="feature-icon"
               />
-              <h3 class="text-[16px] lg:text-[18px] font-semibold">
-                Courier Integration
-              </h3>
+              <h3 class="feature-item-title">Courier Integration</h3>
             </div>
-            <ul
-              class="ml-2 list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-item-list">
               <li>Integrates seamlessly with various courier services.</li>
               <li>
                 Automatically updates courier notes, prices, and final charges.
               </li>
             </ul>
           </div>
-          <div class="space-y-2">
-            <div class="flex items-center justify-start gap-x-4">
+
+          <div class="feature-item">
+            <div class="feature-item-header">
               <img
                 src="./assets/images/tick.svg"
                 alt="tick mark"
-                class="w-6 h-6"
+                class="feature-icon"
               />
-              <h3 class="text-[16px] lg:text-[18px] font-semibold">
-                Real-Time Order Tracking
-              </h3>
+              <h3 class="feature-item-title">Real-Time Order Tracking</h3>
             </div>
-            <ul
-              class="ml-2 list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-item-list">
               <li>
                 Provides live updates on order status for both merchants and
                 customers.
@@ -258,38 +222,32 @@
               </li>
             </ul>
           </div>
-          <div class="space-y-2">
-            <div class="flex items-center justify-start gap-x-4">
+
+          <div class="feature-item">
+            <div class="feature-item-header">
               <img
                 src="./assets/images/tick.svg"
                 alt="tick mark"
-                class="w-6 h-6"
+                class="feature-icon"
               />
-              <h3 class="text-[16px] lg:text-[18px] font-semibold">
-                Automated Inventory Management
-              </h3>
+              <h3 class="feature-item-title">Automated Inventory Management</h3>
             </div>
-            <ul
-              class="ml-2 list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-item-list">
               <li>Monitors and updates inventory levels automatically.</li>
               <li>Sends alerts for low stock to prevent product shortages.</li>
             </ul>
           </div>
-          <div class="space-y-2">
-            <div class="flex items-center justify-start gap-x-4">
+
+          <div class="feature-item">
+            <div class="feature-item-header">
               <img
                 src="./assets/images/tick.svg"
                 alt="tick mark"
-                class="w-6 h-6"
+                class="feature-icon"
               />
-              <h3 class="text-[16px] lg:text-[18px] font-semibold">
-                WordPress Plugin Integration
-              </h3>
+              <h3 class="feature-item-title">WordPress Plugin Integration</h3>
             </div>
-            <ul
-              class="ml-2 list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-item-list">
               <li>
                 Features a WordPress plugin to sync orders from WooCommerce
                 sites directly into the app.
@@ -300,20 +258,17 @@
               </li>
             </ul>
           </div>
-          <div class="space-y-2">
-            <div class="flex items-center justify-start gap-x-4">
+
+          <div class="feature-item">
+            <div class="feature-item-header">
               <img
                 src="./assets/images/tick.svg"
                 alt="tick mark"
-                class="w-6 h-6"
+                class="feature-icon"
               />
-              <h3 class="text-[16px] lg:text-[18px] font-semibold">
-                Multi-User Environment
-              </h3>
+              <h3 class="feature-item-title">Multi-User Environment</h3>
             </div>
-            <ul
-              class="ml-2 list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-item-list">
               <li>
                 Allows multiple users with different access permissions to
                 enhance collaboration.
@@ -323,17 +278,17 @@
           </div>
         </div>
 
-        <div class="grid gap-8 md:gap-12 content-between h-full">
-          <div
-            class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative"
-          >
-            <img src="./assets/images/edit.svg" alt="edit" class="w-16" />
-            <h3 class="text-[16px] lg:text-[18px] font-semibold">
+        <div class="feature-cards">
+          <div class="feature-card">
+            <img
+              src="./assets/images/edit.svg"
+              alt="edit"
+              class="feature-card-icon"
+            />
+            <h3 class="feature-card-title">
               Out of the box Customization Capabilities
             </h3>
-            <ul
-              class="list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+            <ul class="feature-card-list">
               <li>
                 Offers extensive customization to suit specific business
                 workflows and needs.
@@ -345,16 +300,14 @@
             </ul>
           </div>
 
-          <div
-            class="space-y-6 glowing-card bg-white rounded-lg p-6 pt-8 md:pb-16 pb-10 relative"
-          >
-            <img src="./assets/images/fraud.svg" alt="fraud" class="w-16" />
-            <h3 class="text-[16px] lg:text-[18px] font-semibold">
-              Advanced Fraud Detection
-            </h3>
-            <ul
-              class="list-disc list-inside text-[14px] lg:text-[16px] space-y-2"
-            >
+          <div class="feature-card">
+            <img
+              src="./assets/images/fraud.svg"
+              alt="fraud"
+              class="feature-card-icon"
+            />
+            <h3 class="feature-card-title">Advanced Fraud Detection</h3>
+            <ul class="feature-card-list">
               <li>
                 Utilizes advanced algorithms to identify and prevent fraudulent
                 orders.
@@ -370,29 +323,21 @@
     </section>
 
     <!-- Extra Flavour Section -->
-    <section
-      class="extraFlavour container mx-auto p-4 space-y-16 lg:space-y-20 xl:space-y-24"
-    >
-      <div
-        class="space-y-8 md:space-y-0 md:grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16"
-      >
-        <div class="space-y-8 md:space-y-12 text-center md:text-start">
-          <div class="space-y-2">
-            <h2 class="font-semibold text-[20px] md:text-[24px] lg:text-[42px]">
-              Cloud-Based Application
-            </h2>
-            <p class="text-[14px] lg:text-[18px]">
-              Embrace simplicity with Karbari’s cloud-based solution. No
+    <section class="extra-flavour-section">
+      <div class="cloud-features-container">
+        <div class="cloud-features-content">
+          <div class="cloud-feature">
+            <h2 class="cloud-feature-title">Cloud-Based Application</h2>
+            <p class="cloud-feature-description">
+              Embrace simplicity with Karbari's cloud-based solution. No
               installation required—access your business tools from anywhere,
               anytime. Our platform eliminates the need for complex setups,
               letting you focus on what matters most: growing your business.
             </p>
           </div>
-          <div class="space-y-2">
-            <h2 class="font-semibold text-[20px] md:text-[24px] lg:text-[42px]">
-              Super Fast Browsing Experience
-            </h2>
-            <p class="text-[14px] lg:text-[18px]">
+          <div class="cloud-feature">
+            <h2 class="cloud-feature-title">Super Fast Browsing Experience</h2>
+            <p class="cloud-feature-description">
               Speed is essential, and Karbari delivers it in spades. Our
               application is hosted at edge locations nearest to you, ensuring
               lightning-fast access and responsiveness. Thanks to dedicated
@@ -401,34 +346,29 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="cloud-feature-image">
           <img
             src="./assets/images/person-with-laptop.svg"
             alt="Person with laptop"
           />
         </div>
       </div>
-      <div class="space-y-12">
-        <div class="space-y-3 text-center">
-          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Daily Data Backup
-          </h2>
-          <p class="text-[16px] md:text-[20px] lg:text-[26px] font-semibold">
-            Secure, Reliable, and Hassle-Free
-          </p>
+
+      <div class="backup-section">
+        <div class="backup-header">
+          <h2 class="backup-title">Daily Data Backup</h2>
+          <p class="backup-subtitle">Secure, Reliable, and Hassle-Free</p>
         </div>
-        <div class="space-y-8 md:space-y-12">
-          <div
-            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
-          >
+        <div class="backup-features">
+          <div class="backup-feature">
             <img
               src="./assets/images/rectangle.svg"
               alt="rectangle"
-              class="w-20 md:w-auto mb-4 md:mb-0"
+              class="backup-feature-icon"
             />
-            <div class="space-y-2">
-              <h3 class="font-semibold text-[16px]">Backups Stored Off-Site</h3>
-              <p class="text-[14px]">
+            <div class="backup-feature-content">
+              <h3 class="backup-feature-title">Backups Stored Off-Site</h3>
+              <p class="backup-feature-description">
                 Ensuring your data's safety goes beyond regular backups; it's
                 about where these backups are stored. At Karbari, we store all
                 backups off-site, away from our data centers. This strategy
@@ -438,19 +378,16 @@
               </p>
             </div>
           </div>
-          <div
-            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
-          >
+
+          <div class="backup-feature">
             <img
               src="./assets/images/rectangle.svg"
               alt="rectangle"
-              class="w-20 md:w-auto mb-4 md:mb-0"
+              class="backup-feature-icon"
             />
-            <div class="space-y-2">
-              <h3 class="font-semibold text-[16px]">
-                Daily and Fully Automatic
-              </h3>
-              <p class="text-[14px]">
+            <div class="backup-feature-content">
+              <h3 class="backup-feature-title">Daily and Fully Automatic</h3>
+              <p class="backup-feature-description">
                 Forget manual backups and the risks of human error. Our system
                 performs automatic backups every day, at no extra cost to you.
                 This process is fully automated, providing you with peace of
@@ -459,17 +396,16 @@
               </p>
             </div>
           </div>
-          <div
-            class="space-y-2 grid grid-cols-1 md:grid-cols-[auto,1fr] md:gap-x-6 justify-items-center items-center text-center md:text-start"
-          >
+
+          <div class="backup-feature">
             <img
               src="./assets/images/rectangle.svg"
               alt="rectangle"
-              class="w-20 md:w-auto mb-4 md:mb-0"
+              class="backup-feature-icon"
             />
-            <div class="space-y-2">
-              <h3 class="font-semibold text-[16px]">Hourly Backup Options</h3>
-              <p class="text-[14px]">
+            <div class="backup-feature-content">
+              <h3 class="backup-feature-title">Hourly Backup Options</h3>
+              <p class="backup-feature-description">
                 For businesses that require more frequent data protection,
                 Karbari offers hourly backups. This service ensures that even
                 the most recent transactions are safeguarded, minimizing data
@@ -481,27 +417,22 @@
         </div>
       </div>
     </section>
-    <!-- Courier Section -->
-    <section
-      class="courier container mx-auto p-4 space-y-12 lg:space-y-16 xl:space-y-20"
-    >
-      <h2
-        class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
-      >
-        Seamless Courier Integration
-      </h2>
 
-      <div class="md:grid md:grid-cols-2 md:gap-x-12">
-        <div class="space-y-8">
-          <div class="grid grid-cols-2 gap-x-4">
+    <!-- Courier Section -->
+    <section class="courier-section">
+      <h2 class="courier-title">Seamless Courier Integration</h2>
+
+      <div class="courier-content">
+        <div class="courier-info">
+          <div class="courier-logos">
             <img src="./assets/images/pathao.svg" alt="pathao" />
             <img src="./assets/images/steadfast.svg" alt="steadfast" />
           </div>
-          <div class="space-y-4 text-center md:text-left">
-            <h3 class="font-semibold text-[16px]">
+          <div class="courier-description">
+            <h3 class="courier-description-title">
               Integrated Directly into Karbari
             </h3>
-            <p class="text-[14px]">
+            <p class="courier-description-text">
               Both Pathao and Steadfast are fully integrated into the Karbari
               app, providing a seamless and streamlined logistics experience.
               Manage shipments, track deliveries in real-time, and access
@@ -511,44 +442,34 @@
             </p>
           </div>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="courier-image-container">
           <img src="./assets/images/delivery.svg" alt="delivery" />
         </div>
       </div>
     </section>
 
     <!-- Pricing Section -->
-    <section
-      class="pricing container mx-auto p-4 space-y-12 lg:space-y-16 xl:space-y-20"
-      id="pricing"
-    >
+    <section class="pricing-section" id="pricing">
       <div>
-        <h2
-          class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
-        >
-          Choose the Plan
-        </h2>
-        <h2
-          class="font-semibold text-[20px] md:text-[24px] lg:text-[42px] text-center"
-        >
-          That Best Fits Your Business
-        </h2>
+        <h2 class="pricing-heading">Choose the Plan</h2>
+        <h2 class="pricing-heading">That Best Fits Your Business</h2>
       </div>
       <div>
-        <div class="flex gap-x-4 items-center">
-          <p class="w-1/2 text-right md:py-10">Pay Monthly</p>
-          <label class="relative inline-flex items-center cursor-pointer">
+        <div class="switch-container">
+          <p class="switch-label">Pay Monthly</p>
+          <label class="switch-toggle">
             <input type="checkbox" class="sr-only peer" />
             <div
               class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"
             ></div>
           </label>
+
           <div class="flex items-center gap-x-1 w-1/2 md:py-10 relative">
             <p>Pay Yearly</p>
             <div class="relative group md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 text-gray-500 cursor-help"
+                class="h-5 w-5 text-bodyText cursor-help"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -591,7 +512,7 @@
             <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
               Essential
             </h3>
-            <p class="text-[#64748B] text-[14px] lg:text-[16px]">
+            <p class="text-bodyText text-[14px] lg:text-[16px]">
               Ideal for businesses looking to streamline their e-commerce
               operations.
             </p>
@@ -599,7 +520,7 @@
               class="text-[40px] md:text-[43px] lg:text-[46px] font-semibold"
               id="essential-price"
             >
-              ৳ 2,500<sup class="text-[14px] text-[#4B5768] font-normal"
+              ৳ 2,500<sup class="text-[14px] text-bodyText font-normal"
                 >/month</sup
               >
             </div>
@@ -857,12 +778,12 @@
             <h3 class="text-[18px] md:text-[20px] lg:text-[22px] font-bold">
               Custom
             </h3>
-            <p class="text-[#64748B] text-[14px] lg:text-[16px]">
+            <p class="text-bodyText text-[14px] lg:text-[16px]">
               Ideal for businesses who need personalized services and features.
             </p>
             <div class="text-[30px] lg:text-[36px] font-semibold pb-0 sm:pb-3">
               Negotiable
-              <sup class="text-[14px] text-[#4B5768] font-normal">pricing</sup>
+              <sup class="text-[14px] text-bodyText font-normal">pricing</sup>
             </div>
           </div>
           <button
@@ -982,43 +903,33 @@
     </section>
 
     <!-- Why Karbari Section -->
-    <section
-      class="why-karbari font-jakarta space-y-6 md:space-y-10 lg:space-y-14 xl:space-y-16"
-    >
-      <div
-        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
-      >
-        <div class="space-y-3 text-center">
-          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Why Choose Karbari?
-          </h2>
-          <p class="text-[14px] md:text-[20px] lg:text-[26px] font-semibold">
+    <section class="why-karbari text-bodyText">
+      <div class="why-karbari-container">
+        <div class="why-karbari-header">
+          <h2 class="why-karbari-title">Why Choose Karbari?</h2>
+          <p class="why-karbari-subtitle">
             Maximizing Your Business Potential with Proven, Powerful Tools
           </p>
         </div>
       </div>
 
-      <div class="bg-[#FAFAFA]">
-        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-            <div class="flex items-center justify-center order-2 md:order-1">
+      <div class="feature-grid-section">
+        <div class="feature-grid-container">
+          <div class="feature-grid">
+            <div
+              class="feature-image-wrapper order-second-mobile order-first-desktop"
+            >
               <img
                 src="./assets/images/unmatched-efficiency.svg"
                 alt="unmatched efficiency image"
-                class="w-full md:max-w-[400px] lg:max-w-[500px]"
+                class="feature-image"
               />
             </div>
             <div
-              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1 md:order-2 md:pr-6 lg:pr-12"
+              class="feature-content order-first-mobile order-second-desktop"
             >
-              <h2
-                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
-              >
-                Unmatched Efficiency
-              </h2>
-              <p
-                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
-              >
+              <h2 class="feature-content-title">Unmatched Efficiency</h2>
+              <p class="feature-content-description">
                 Karbari streamlines every aspect of your e-commerce and
                 f-commerce operations. From order processing to delivery
                 tracking and inventory management, our platform is designed to
@@ -1031,47 +942,35 @@
         </div>
       </div>
 
-      <div class="">
-        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-            <div
-              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1"
-            >
-              <h2
-                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
-              >
-                Advanced Integration Capabilities
-              </h2>
-              <p
-                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
-              >
-                Seamlessly connect with major courier services like Pathao and
-                Steadfast, and leverage our WordPress plugin for real-time order
-                syncing. Karbari is all about creating a cohesive ecosystem
-                where all components of your online business communicate
-                flawlessly, enhancing efficiency and reliability.
-              </p>
-            </div>
-            <div class="flex items-center justify-center order-2">
-              <img
-                src="./assets/images/advanced-integration.svg"
-                alt="advanced integration image"
-                class="w-full md:max-w-[400px] lg:max-w-[500px]"
-              />
-            </div>
+      <div class="feature-grid-container">
+        <div class="feature-grid">
+          <div class="feature-content order-first-mobile">
+            <h2 class="feature-content-title">
+              Advanced Integration Capabilities
+            </h2>
+            <p class="feature-content-description">
+              Seamlessly connect with major courier services like Pathao and
+              Steadfast, and leverage our WordPress plugin for real-time order
+              syncing. Karbari is all about creating a cohesive ecosystem where
+              all components of your online business communicate flawlessly,
+              enhancing efficiency and reliability.
+            </p>
+          </div>
+          <div class="feature-image-wrapper order-second-mobile">
+            <img
+              src="./assets/images/advanced-integration.svg"
+              alt="advanced integration image"
+              class="feature-image"
+            />
           </div>
         </div>
       </div>
 
-      <div
-        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
-      >
-        <div class="space-y-3 text-center">
-          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Scalability at Your Fingertips
-          </h2>
-          <p class="text-[14px] md:text-[16px] text-gray-700">
-            Whether you’re a small startup or a large enterprise, Karbari grows
+      <div class="why-karbari-container">
+        <div class="why-karbari-header">
+          <h2 class="why-karbari-title">Scalability at Your Fingertips</h2>
+          <p class="why-karbari-description text-bodyText">
+            Whether you're a small startup or a large enterprise, Karbari grows
             with you. Our plans are designed to cater to businesses of all sizes
             with no limits on the number of users or orders. Scale your
             operations effortlessly without any additional software overhead.
@@ -1079,28 +978,26 @@
         </div>
       </div>
 
-      <div class="bg-[#FAFAFA]">
-        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-            <div class="flex items-center justify-center order-2 md:order-1">
+      <div class="feature-grid-section">
+        <div class="feature-grid-container">
+          <div class="feature-grid">
+            <div
+              class="feature-image-wrapper order-second-mobile order-first-desktop"
+            >
               <img
                 src="./assets/images/security.svg"
                 alt="security image"
-                class="w-full md:max-w-[400px] lg:max-w-[500px]"
+                class="feature-image"
               />
             </div>
             <div
-              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1 md:order-2 md:pr-6 lg:pr-12"
+              class="feature-content order-first-mobile order-second-desktop"
             >
-              <h2
-                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
-              >
+              <h2 class="feature-content-title">
                 Reliable Security and Data Protection
               </h2>
-              <p
-                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
-              >
-                Your data’s security is our top priority. With daily automatic
+              <p class="feature-content-description">
+                Your data's security is our top priority. With daily automatic
                 backups and off-site storage, we ensure your business data is
                 protected against any unforeseen events. Choose Karbari for
                 peace of mind, knowing your data is safe and always available.
@@ -1110,48 +1007,36 @@
         </div>
       </div>
 
-      <div class="">
-        <div class="container mx-auto px-4 py-8 md:py-16 lg:py-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-            <div
-              class="space-y-4 md:space-y-6 lg:space-y-8 flex flex-col justify-center order-1"
-            >
-              <h2
-                class="font-semibold text-[20px] md:text-[28px] lg:text-[32px] text-center md:text-left"
-              >
-                Custom Solutions for Complex Needs
-              </h2>
-              <p
-                class="text-[14px] md:text-[15px] lg:text-[16px] text-center md:text-left leading-relaxed"
-              >
-                Every business is unique, and sometimes a one-size-fits-all
-                solution just doesn’t cut it. That’s why Karbari offers
-                customizable plans that can be tailored to meet the specific
-                demands of your business. Get exactly what you need with our
-                Custom Enterprise Plan.
-              </p>
-            </div>
-            <div class="flex items-center justify-center order-2">
-              <img
-                src="./assets/images/custom-solution.svg"
-                alt="custom solution image"
-                class="w-full md:max-w-[400px] lg:max-w-[500px]"
-              />
-            </div>
+      <div class="feature-grid-container">
+        <div class="feature-grid">
+          <div class="feature-content order-first-mobile">
+            <h2 class="feature-content-title">
+              Custom Solutions for Complex Needs
+            </h2>
+            <p class="feature-content-description">
+              Every business is unique, and sometimes a one-size-fits-all
+              solution just doesn't cut it. That's why Karbari offers
+              customizable plans that can be tailored to meet the specific
+              demands of your business. Get exactly what you need with our
+              Custom Enterprise Plan.
+            </p>
+          </div>
+          <div class="feature-image-wrapper order-second-mobile">
+            <img
+              src="./assets/images/custom-solution.svg"
+              alt="custom solution image"
+              class="feature-image"
+            />
           </div>
         </div>
       </div>
 
-      <div
-        class="container mx-auto p-4 space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
-      >
-        <div class="space-y-3 text-center">
-          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Local Insight, Global Standards
-          </h2>
-          <p class="text-[14px] md:text-[16px] text-gray-700">
+      <div class="why-karbari-container text-bodyText">
+        <div class="why-karbari-header">
+          <h2 class="why-karbari-title">Local Insight, Global Standards</h2>
+          <p class="why-karbari-description text-bodyText">
             Karbari combines local market understanding with global
-            technological standards to deliver a solution that’s not just
+            technological standards to deliver a solution that's not just
             effective but also relevant to your specific business environment.
             Benefit from a product that appreciates local challenges while
             providing world-class quality.
@@ -1224,14 +1109,7 @@
             allowfullscreen
           ></iframe>
         </div>
-        <script>
-          function playVideo() {
-            document.getElementById("thumbnailContainer").style.display =
-              "none";
-            document.getElementById("videoWrapper").style.display = "block";
-            document.getElementById("youtubeVideo").src += "?autoplay=1";
-          }
-        </script>
+       
       </div>
 
       <div class="h-8"></div>
@@ -1336,334 +1214,240 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="container mx-auto p-4 relative">
+    <section class="cta-section">
       <img
         src="./assets/images/call-to-action-mobile.svg"
         alt="call to action"
-        class="w-full pointer-events-none md:h-auto h-72 md:hidden block"
+        class="cta-mobile-image"
       />
       <img
         src="./assets/images/call-to-action.svg"
         alt="call to action"
-        class="w-full pointer-events-none md:h-auto h-72 md:block hidden"
+        class="cta-desktop-image"
       />
-      <div
-        class="absolute inset-0 flex flex-col md:flex-row justify-center md:justify-between items-center px-4 md:px-12 lg:px-24 py-4 md:py-8 text-white text-center md:text-left"
-      >
-        <div class="sm:space-y-1 md:space-y-4 mb-1 md:mb-0">
-          <h2
-            class="text-[14px] sm:text-[18px] md:text-[24px] lg:text-[40px] font-semibold"
-          >
-            Begin your journey today
-          </h2>
-          <p class="text-[10px] sm:text-[12px] md:text-[16px]">
+      <div class="cta-content">
+        <div class="cta-text-container">
+          <h2 class="cta-title">Begin your journey today</h2>
+          <p class="cta-description">
             Buildings are constructed in stages. begin with our offer today.
           </p>
         </div>
         <div>
-          <button
-            class="bg-gradient-to-r from-[#15AA00] to-[#4FD03B] px-3 md:px-6 py-1.5 md:py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-xs sm:text-sm md:text-base"
-          >
-            Get Started
-          </button>
+          <button class="cta-button">Get Started</button>
         </div>
       </div>
     </section>
 
     <!-- Contact Page -->
-    <section
-      class="contactPage container mx-auto p-4 font-poppins space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20"
-      id="support"
-    >
-      <div class="space-y-8 md:space-y-12 lg:space-y-16 xl:space-y-20">
-        <div class="space-y-3 text-center">
-          <h2 class="font-semibold text-[20px] md:text-[28px] lg:text-[42px]">
-            Let's level up your business, together
-          </h2>
-          <p class="text-[14px] md:text-[16px] text-gray-700">
+    <section class="contact-section" id="support">
+      <div class="contact-header">
+        <div class="contact-title-wrapper">
+          <h2 class="contact-title">Let's level up your business, together</h2>
+          <p class="contact-subtitle">
             You can reach us anytime via
-            <a href="mailto:sis@karbari.app" class="text-primary"
+            <a href="mailto:sis@karbari.app" class="contact-email"
               >sis@karbari.app</a
             >
           </p>
         </div>
       </div>
 
-      <div class="">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div class="hidden md:block h-full">
-            <img
-              src="./assets/images/contact.svg"
-              alt="contact illustration"
-              class="w-full h-full object-cover max-w-lg mx-auto pointer-events-none"
-            />
-          </div>
+      <div class="contact-grid">
+        <div class="contact-image-wrapper">
+          <img
+            src="./assets/images/contact.svg"
+            alt="contact illustration"
+            class="contact-image"
+          />
+        </div>
 
-          <div class="w-full max-w-lg mx-auto">
-            <form class="space-y-6">
-              <div>
-                <label
-                  for="name"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Name</label
-                >
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="yourmail@example.com"
+                class="form-input"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <div class="phone-input-group">
+                <select id="country" name="country" class="country-select">
+                  <option value="+1">US</option>
+                  <option value="+44">UK</option>
+                  <option value="+91">IN</option>
+                  <option value="+86">CN</option>
+                  <option value="+81">JP</option>
+                  <option value="+880">BD</option>
+                </select>
                 <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(555) 000-0000"
+                  class="phone-input"
                 />
               </div>
+            </div>
 
-              <div>
-                <label
-                  for="email"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="yourmail@example.com"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
-                />
-              </div>
+            <div class="form-group">
+              <label for="message" class="form-label">How can we help?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us about your project..."
+                class="form-textarea"
+              ></textarea>
+            </div>
 
-              <div class="space-y-2">
-                <label
-                  for="phone"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >Phone Number</label
-                >
-                <div
-                  class="overflow-hidden flex border border-gray-300 rounded-lg focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent"
-                >
-                  <select
-                    id="country"
-                    name="country"
-                    class="w-24 px-2 py-2 border-r border-gray-300 focus:outline-none rounded-l-lg"
-                  >
-                    <option value="+1">US</option>
-                    <option value="+44">UK</option>
-                    <option value="+91">IN</option>
-                    <option value="+86">CN</option>
-                    <option value="+81">JP</option>
-                    <option value="+880">BD</option>
-                  </select>
+            <div class="form-group">
+              <label class="form-label">Services</label>
+              <div class="checkbox-grid">
+                <div class="checkbox-wrapper">
                   <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="(555) 000-0000"
-                    class="flex-1 px-4 py-2 focus:outline-none rounded-r-lg"
+                    type="checkbox"
+                    id="website"
+                    name="services"
+                    value="website"
+                    class="custom-checkbox"
                   />
+                  <label for="website" class="checkbox-label"
+                    >Website design</label
+                  >
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="content"
+                    name="services"
+                    value="content"
+                    class="custom-checkbox"
+                  />
+                  <label for="content" class="checkbox-label"
+                    >Content creation</label
+                  >
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="ux"
+                    name="services"
+                    value="ux"
+                    class="custom-checkbox"
+                  />
+                  <label for="ux" class="checkbox-label">UX design</label>
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="hosting"
+                    name="services"
+                    value="hosting"
+                    class="custom-checkbox"
+                  />
+                  <label for="hosting" class="checkbox-label"
+                    >Superfast Hosting</label
+                  >
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="app"
+                    name="services"
+                    value="app"
+                    class="custom-checkbox"
+                  />
+                  <label for="app" class="checkbox-label">Karbari App</label>
+                </div>
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    id="other"
+                    name="services"
+                    value="other"
+                    class="custom-checkbox"
+                  />
+                  <label for="other" class="checkbox-label">Other</label>
                 </div>
               </div>
+            </div>
 
-              <div>
-                <label
-                  for="message"
-                  class="block text-sm font-medium text-gray-700 mb-1"
-                  >How can we help?</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="Tell us about your project..."
-                  class="w-full min-h-[100px] px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
-                ></textarea>
-              </div>
-
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1"
-                  >Services</label
-                >
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="website"
-                      name="services"
-                      value="website"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="website"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      Website design
-                    </label>
-                  </div>
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="content"
-                      name="services"
-                      value="content"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="content"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      Content creation
-                    </label>
-                  </div>
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="ux"
-                      name="services"
-                      value="ux"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="ux"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      UX design
-                    </label>
-                  </div>
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="hosting"
-                      name="services"
-                      value="hosting"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="hosting"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      Superfast Hosting
-                    </label>
-                  </div>
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="app"
-                      name="services"
-                      value="app"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="app"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      Karbari App
-                    </label>
-                  </div>
-                  <div class="flex items-center cursor-pointer">
-                    <input
-                      type="checkbox"
-                      id="other"
-                      name="services"
-                      value="other"
-                      class="custom-checkbox"
-                    />
-                    <label
-                      for="other"
-                      class="ml-2 text-sm text-gray-700 cursor-pointer"
-                    >
-                      Other
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                class="w-full bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition-opacity"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <section class="bg-[#FAFAFA]">
-      <div class="container mx-auto px-4 py-8 md:py-14">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
-          <div class="space-y-4 md:space-y-8 text-center md:text-left">
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
             <img
               src="./assets/images/karbari-logo.svg"
               alt="karbari logo"
-              class="h-6 md:h-8 mx-auto md:mx-0"
+              class="footer-logo"
             />
-            <p class="text-[14px] md:text-[16px] text-gray-600">
+            <p class="footer-description">
               Clarity gives you the blocks and components you need to create a
               truly professional website.
             </p>
           </div>
-          <div
-            class="space-y-4 text-center md:text-left flex flex-col items-center"
-          >
-            <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
-              <p class="font-semibold text-[16px] md:text-[18px]">Company</p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                About
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Features
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Works
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Career
-              </p>
+
+          <div class="footer-column">
+            <div class="footer-links">
+              <p class="footer-column-title">Company</p>
+              <p class="footer-link">About</p>
+              <p class="footer-link">Features</p>
+              <p class="footer-link">Works</p>
+              <p class="footer-link">Career</p>
             </div>
           </div>
-          <div
-            class="space-y-4 text-center md:text-left flex flex-col items-center"
-          >
-            <div class="space-y-3 text-[14px] md:text-[16px] text-gray-600">
-              <p class="font-semibold text-[16px] md:text-[18px]">Help</p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Customer Support
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Delivery Details
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Terms & Conditions
-              </p>
-              <p class="hover:text-primary cursor-pointer transition-colors">
-                Privacy Policy
-              </p>
+
+          <div class="footer-column">
+            <div class="footer-links">
+              <p class="footer-column-title">Help</p>
+              <p class="footer-link">Customer Support</p>
+              <p class="footer-link">Delivery Details</p>
+              <p class="footer-link">Terms & Conditions</p>
+              <p class="footer-link">Privacy Policy</p>
             </div>
           </div>
-          <div
-            class="space-y-4 text-center md:text-left flex flex-col items-center"
-          >
-            <div class="space-y-3">
-              <p class="font-semibold text-[16px] md:text-[18px] text-gray-600">
-                Newsletter
-              </p>
-              <div class="h-1"></div>
+
+          <div class="footer-column">
+            <div class="newsletter-container">
+              <p class="newsletter-title">Newsletter</p>
+              <div class="newsletter-spacer"></div>
               <input
                 type="email"
                 placeholder="Enter your email"
-                class="w-full px-4 py-2 text-[14px] border border-gray-300 rounded-md focus:outline-none focus:border-primary focus-within:ring-1 focus-within:ring-primary"
+                class="newsletter-input"
               />
-              <button
-                class="w-full bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity text-[14px]"
-              >
-                Subscribe Now
-              </button>
+              <button class="newsletter-button">Subscribe Now</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container mx-auto text-center p-8 border-t border-gray-200">
-        <p class="text-[14px] md:text-[16px] text-gray-600">
+
+      <div class="footer-copyright">
+        <p class="copyright-text">
           © Copyright 2022, All Rights Reserved by Karbari.App
         </p>
       </div>
